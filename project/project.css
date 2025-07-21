@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.contenar {
+    padding: 10px 8%;
+    height: 300vh;
+}
+
+/* navigation css */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    padding: 15px 0px;
+    top: 0;
+    margin-bottom: 20px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo i {
+    font-size: 22px;
+    margin-top: 4px;
+    margin-right: 8px;
+    color: #cda274;
+}
+
+.nav-logo h1 {
+    font-size: 21px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+
+}
+
+
+.fa-bars {
+    font-size: 22px;
+    margin-top: 4px;
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+.nav-btn {
+    display: none;
+}
+
+
+@media(min-width:768px) {
+
+   
+    .nav-logo h1 {
+        font-size: 26px;
+    }
+
+    .contenar {
+        padding: 10px 6%;
+
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+
+    ul {
+        display: block;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+
+    li {
+        margin: 0 0 0 12px;
+        font-size: 17px;
+
+
+    }
+
+    a {
+        color: black;
+        font-family: "Playfair Display", serif;
+        font-weight: 500;
+    }
+}
+
+
+@media (min-width:1024px) {
+
+    .nav-btn {
+        display: block;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    li {
+
+        margin: 0px 15px;
+    }
+
+    .nav-btn button {
+        padding: 5px 10px 8px;
+        font-size: 14px;
+        border: none;
+        background-color: rgb(229, 200, 146);
+        color: white;
+        border-radius: 4px;
+        margin-left: 20px;
+    }
+
+    button:hover {
+        background-color: rgb(175, 141, 79);
+    }
+
+}
+
+@media (min-width:1280px) {
+    .icon {
+        display: block;
+    }
+
+    .nav-btn {
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+
+        font-size: 19px;
+    }
+
+    .nav-btn i {
+        font-size: 18px;
+        margin: 0 12px;
+    }
+
+    .nav-btn button {
+        margin: 0 0 0 20px;
+    }
+
+}
+
+
+.main {
+    height: 50vh;
+    background-image: url("../images/home-3.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+.main .project {
+    background-color: white;
+    width: 60%;
+    height: 15vh;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main .project h1 {
+    margin: 10px 0px;
+    font-family: "Playfair Display", serif;
+}
+
+@media (min-width:768px) {
+
+    .main .project {
+        width: 40%;
+        height: 20vh;
+        padding-top: 20px;
+
+    }
+
+    .main .project h1 {
+        font-size: 34px;
+    }
+
+    .main p {
+
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width:1280px) {
+    .main .project {
+        width: 30%;
+        height: 20vh;
+    }
+
+    .main .project h1 {
+        font-size: 38px;
+    }
+
+    .main p {
+        font-size: 20px;
+    }
+}
+
+
+
+.option {
+ 
+    margin: 10% 0px;
+}
+
+.option ul {
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #cda274;
+    border-radius: 12px;
+}
+
+.option li {
+    list-style: none;
+    text-align: center;
+    padding: 20px 0px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+li:hover {
+    background-color: #cda274;
+    color: white;
+}
+
+
+@media (min-width:768px) {
+
+    .option,
+    .option ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .option li {
+        margin: 0px;
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width:1024px) {
+
+    .option li {
+        padding: 15px 40px;
+    }
+
+    
+}
+
+.our-projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+.our-projects .first img{
+    width: 100%;
+    height: 300px;
+}
+.our-projects .second img{
+    width: 100%;
+    height: 200px;
+}
+
+.our-projects .second {
+   
+    height: 20vh;
+}
