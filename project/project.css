@@ -7,8 +7,8 @@
 }
 
 .contenar {
-    padding: 10px 8%;
-    height: 300vh;
+    padding: 10px 20px;
+
 }
 
 /* navigation css */
@@ -62,7 +62,7 @@ ul,
 
 @media(min-width:768px) {
 
-   
+
     .nav-logo h1 {
         font-size: 26px;
     }
@@ -158,60 +158,44 @@ ul,
 }
 
 
+
+
 .main {
     height: 50vh;
     background-image: url("../images/home-3.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: end;
-    margin-bottom: 30px;
+    align-items: center;
 }
 
 .main .project {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.336);
+    color: white;
     width: 60%;
     height: 15vh;
-    border-radius: 20px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    text-align: center;
-    padding-top: 10px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main .project h1 {
-    margin: 10px 0px;
     font-family: "Playfair Display", serif;
 }
+
 
 @media (min-width:768px) {
 
     .main .project {
-        width: 40%;
-        height: 20vh;
-        padding-top: 20px;
-
-    }
-
-    .main .project h1 {
-        font-size: 34px;
-    }
-
-    .main p {
-
-        font-size: 20px;
-    }
-
-}
-
-@media (min-width:1280px) {
-    .main .project {
-        width: 30%;
-        height: 20vh;
+        width: 35%;
+        height: 18vh;
     }
 
     .main .project h1 {
         font-size: 38px;
+        margin-bottom: 5px;
     }
 
     .main p {
@@ -221,47 +205,61 @@ ul,
 
 
 
+
+
+
+
+
 .option {
- 
-    margin: 10% 0px;
+
+    margin: 15% 0px;
 }
 
 .option ul {
     display: block;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-radius: 4px;
+    /* background-color: #292f367e; */
     border: 2px solid #cda274;
-    border-radius: 12px;
+
+
 }
 
 .option li {
     list-style: none;
     text-align: center;
-    padding: 20px 0px;
+    padding: 10px 0px;
     font-weight: 600;
-    border-radius: 10px;
+    /* color: whitesmoke; */
+    color: black;
+    font-size: 17px;
 }
 
 li:hover {
-    background-color: #cda274;
-    color: white;
+    background-color: #e5bd92;
+
 }
 
 
 @media (min-width:768px) {
 
+    .option {
+        margin: 5% 0px;
+    }
+
     .option,
     .option ul {
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 10px;
 
     }
 
     .option li {
         margin: 0px;
-        padding: 15px 30px;
-        font-size: 18px;
+        padding: 8px 30px;
+
     }
 }
 
@@ -269,28 +267,350 @@ li:hover {
 @media (min-width:1024px) {
 
     .option li {
-        padding: 15px 40px;
+        padding: 10px 40px;
+    }
+
+    .option,
+    .option ul {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+    }
+
+}
+
+
+
+.project-section {
+    height: 500vh;
+}
+
+.project-contenar {
+
+    margin-bottom: 20px;
+}
+
+.our-projects {
+    column-count: 2;
+    margin-bottom: 10%;
+}
+
+.living-info {
+    margin: 20px 0px 40px;
+    text-align: center;
+}
+
+.living-info h2 {
+    font-family: "Playfair Display", serif;
+    margin: 10px 0px;
+}
+
+
+.our-projects .first img {
+    width: 100%;
+    height: 250px;
+    margin: 4px;
+}
+
+.our-projects .second img {
+    width: 100%;
+    height: 150px;
+    margin: 4px;
+}
+
+
+.sec-box {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.sec-proje {
+    position: relative;
+    width: 70%;
+}
+
+.sec-proje .first img {
+    width: 100%;
+    height: 250px;
+
+}
+
+.sec-proje .second img {
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    bottom: -60px;
+    left: -98px;
+}
+
+
+
+@media (min-width:768px) {
+    .our-projects {
+        column-gap: 3%;
+    }
+
+    .our-projects {
+        width: 50%;
+        order: 0;
+        margin-bottom: 0px;
+    }
+
+    .living-info {
+        width: 50%;
+        order: 1;
+    }
+
+    .project-contenar {
+
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 4%;
+    }
+
+    .our-projects .first img {
+        height: 200px;
+    }
+
+    .our-projects .second img {
+        height: 150px;
+    }
+
+
+    .sec-info {
+        order: 0;
     }
 
     
+    .sec-proje {
+        order: 1;
+    }
+
+   .third-info{
+         order: 1;
+    }
+
+    .third-proje{
+         order: 0;
+    }
+
+
+    .living-rooms {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 5%;
+    }
+
+    .Dining{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .sec-box {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .sec-proje {
+        width: 50%;
+    }
+
+    .sec-info {
+        width: 60%;
+        margin-right: 50px;
+    }
+
+    .sec-proje .first img {
+        width: 100%;
+        height: 280px;
+       
+    }
+
+    .sec-proje .second img {
+        width: 83%;
+        height: 230px;
+        position: absolute;
+        bottom: -60px;
+        left: -80px;
+    }
 }
 
-.our-projects{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5%;
+
+@media (min-width:1024px) {
+    .living-info h2 {
+        font-size: 34px;
+    }
+
+    .project-contenar {
+        padding: 20px;
+        gap: 4%;
+    }
+
+    .our-projects .first img {
+        height: 250px;
+    }
+
+    .sec-proje .first img {
+        width: 100%;
+        height: 330px;
+        
+    }
+
+    .sec-proje .second img {
+        width: 80%;
+        height: 250px;
+        position: absolute;
+        bottom: -90px;
+        left: -80px;
+    }
+
 }
 
-.our-projects .first img{
-    width: 100%;
-    height: 300px;
-}
-.our-projects .second img{
-    width: 100%;
-    height: 200px;
+
+@media (min-width:1280px) {
+    .project-contenar {
+        width: 75%;
+        padding: 0px;
+    }
+
+    .living-info p {
+        font-size: 17px;
+    }
+
+    .our-projects .first img {
+        height: 300px;
+    }
+
+    .our-projects .second img {
+        height: 150px;
+    }
+
+    .sec-box {
+        width: 80%;
+    }
+
+    .sec-info {
+        width: 60%;
+    }
+
+    .sec-proje .first img {
+        width: 75%;
+        height: 380px;
+        margin-left: 20%;
+    }
+
+    .sec-proje .second img {
+        width: 65%;
+        height: 350px;
+        position: absolute;
+        bottom: -150px;
+        left: -10px;
+    }
+
 }
 
-.our-projects .second {
-   
-    height: 20vh;
+
+
+
+
+footer {
+    background-color: #292f36;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.foter-logo i {
+    font-size: 20px;
+    margin: 20px 5px 10px;
+}
+
+
+.footer-services,
+.footer-contact {
+    margin: 15px 0px;
+}
+
+.footer-services h4,
+.footer-contact h4 {
+
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.footer-services li,
+.footer-contact li {
+
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+@media (min-width:768px) {
+
+    footer {
+        height: 50vh;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        gap: 3%;
+    }
+
+    .footer-left {
+        width: 35%;
+        margin-top: 20px;
+    }
+
+    .footer-services h4,
+    .footer-contact h4 {
+
+        font-size: 20px;
+    }
+
+    .footer-services li,
+    .footer-contact li {
+        margin: 10px 0px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+}
+
+
+
+@media (min-width:1024px) {
+
+    .footer-left {
+        width: 40%;
+    }
+
+    .footer-left p {
+        margin: 10px 0px;
+    }
+
+
+
+}
+
+@media (min-width:1280px) {
+
+    .footer-info {
+        width: 75%;
+    }
+
+    .footer-left {
+        width: 35%;
+    }
+
 }
