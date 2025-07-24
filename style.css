@@ -54,7 +54,10 @@ a{
     text-decoration: none;
 }
 
-ul,
+ul{
+    display: block;
+}
+
 .nav-btn {
     display: none;
 }
