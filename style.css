@@ -161,8 +161,8 @@ ul,
 main {
     height: 40vh;
     margin-top: 0;
-    background-image: linear-gradient(rgb(0, 0, 0, 0.42)),
-     url("../images/home-4.jpg");
+    background-image:  url("images/home-4.jpg");
+    background-color: linear-gradient(rgb(0, 0, 0, 0.42));
     background-size: cover;
     display: flex;
     justify-content: center;
