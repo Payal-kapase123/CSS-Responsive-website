@@ -6,7 +6,7 @@
 }
 
 .contenar {
-    padding: 0px 8%;
+    padding: 0px 5%;
 
 }
 
@@ -73,7 +73,8 @@ ul,
     }
 
     .contenar {
-        padding: 10px 6%;
+        padding: 10px 8%;
+        
     }
 
     .fa-bars {
@@ -163,7 +164,7 @@ ul,
 
     li {
 
-        font-size: 22px;
+        font-size: 19px;
     }
 
     .nav-btn i {
@@ -189,11 +190,11 @@ ul,
 }
 
 .main .project {
-    background-color: rgba(0, 0, 0, 0.336);
+    background-color: rgba(0, 0, 0, 0.538);
     color: white;
     width: 60%;
     height: 15vh;
-    border: 2px solid white;
+    border: 2px solid sandybrown;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,11 +269,9 @@ ul,
 
     width: 100%;
     height: 45vh;
-    /* margin: 15% 0px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid black; */
 }
 
 .bout-outer-box {
@@ -338,7 +337,7 @@ ul,
 
     .bout-outer-box,
     .quot-box {
-        width: 60%;
+        width: 55%;
         height: 35vh;
        
     }
@@ -363,7 +362,7 @@ ul,
     }
 
     .bout-outer-box {
-        width: 50%;
+        width: 45%;
     }
 
     .quot-box h3 {
@@ -386,11 +385,11 @@ ul,
 
 .working-box {
      margin-bottom: 15%;
-      /* border: 2px solid black; */
+     padding: 10px 10px 20px;
+     box-shadow: 0px 0px 10px rgb(0,0,0, 0.2);
 }
 
 .working-info {
-    padding: 10px 0px;
     text-align: center;
 }
 
@@ -421,7 +420,7 @@ p {
 
 .woking-img img {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     border-radius: 4px;
 
 }
@@ -430,11 +429,13 @@ p {
 
 
     .working-box {
-        width: 90%;
+        width: 95%;
+        /* height: 80vh; */
+        padding: 40px 30px 40px;
     }
 
     .working-info {
-        margin: 20px 0px;
+        margin: 40px 0px;
     }
 
     .working-info h1 {
@@ -443,7 +444,7 @@ p {
 
     .working-info p {
         font-size: 29px;
-        
+        margin: 20px 0px;
     }
 
     .working-info button {
@@ -469,10 +470,11 @@ p {
         display: flex;
         align-items: center;
         gap: 7%;
+        box-shadow: none;
     }
 
     .working-box {
-        width: 95%;
+        width: 90%;
         margin-bottom: 10%;
     }
 
@@ -500,7 +502,7 @@ p {
 
     .woking-img img {
         border-radius: 50px;
-
+        height: 40vh;
     }
 
     .working-info button {
@@ -522,7 +524,7 @@ p {
     }
 
     .box-11{
-         margin-bottom: 15%;
+         margin-bottom: 10%;
     }
 
     .box-2 {
@@ -535,8 +537,9 @@ p {
 
 
     .working-box {
-        width: 80%;
-        gap: 10%;
+        width: 85%;
+        gap: 8%;
+        /* border: 2px solid black;/ */
     }
 
 
@@ -608,7 +611,7 @@ p {
     .people-info h1 {
         font-size: 32px;
         margin: 20px 0px 30px;
-        width: 50%;
+        width: 60%;
     }
 
     .people-img img {
@@ -684,7 +687,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .contact-box h1 {
@@ -745,6 +747,7 @@ button .fa-arrow-right {
 
     .contact-box {
         align-items: center;
+       
         width: 90%;
     }
 
