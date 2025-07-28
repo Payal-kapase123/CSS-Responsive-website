@@ -1,0 +1,860 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.contenar {
+    padding: 0px 5%;
+}
+
+/* Navigation css------------------------------------------------------------------> */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    padding: 15px 0px;
+    top: 0;
+    margin: 10px 0px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo i {
+    font-size: 22px;
+    margin-top: 4px;
+    margin-right: 8px;
+    color: #cda274;
+}
+
+.nav-logo h1 {
+    font-size: 21px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+
+
+.fa-bars {
+    font-size: 22px;
+    margin-top: 4px;
+    color: gray;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+ul,
+.nav-btn {
+    display: none;
+}
+
+
+@media(min-width:768px) {
+
+    .nav-logo i {
+        font-size: 35px;
+        margin-right: 15px;
+    }
+
+    .nav-logo h1 {
+        font-size: 40px;
+    }
+
+    /* .contenar {
+        padding: 10px 8%;
+        
+    } */
+    .contenar {
+        padding: 0px 5%;
+    }
+
+
+    .fa-bars {
+        font-size: 40px;
+
+    }
+}
+
+
+@media (min-width:1024px) {
+
+    .contenar {
+        padding: 10px 8%;
+
+    }
+
+    .nav {
+        margin: 0px;
+        margin-bottom: 5px;
+    }
+
+    .nav-logo i {
+        font-size: 25px;
+        margin-right: 5px;
+
+    }
+
+    .nav-logo h1 {
+        font-size: 28px;
+    }
+
+    .fa-bars {
+        display: none;
+
+    }
+
+    ul {
+        display: block;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+
+    li {
+
+        font-size: 19px;
+        margin: 0px 15px;
+    }
+
+    a {
+        color: black;
+        font-family: "Playfair Display", serif;
+        font-weight: 500;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .nav-btn button {
+        padding: 10px 10px 8px;
+        font-size: 14px;
+        border: none;
+        background-color: rgb(229, 200, 146);
+        color: white;
+        border-radius: 4px;
+        margin-left: 20px;
+    }
+
+    button:hover {
+        background-color: rgb(175, 141, 79);
+    }
+
+}
+
+
+
+@media (min-width:1280px) {
+    .icon {
+        display: block;
+    }
+
+    .nav-btn {
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+
+        font-size: 19px;
+    }
+
+    .nav-btn i {
+        font-size: 18px;
+        margin: 0 12px;
+    }
+
+    .nav-btn button {
+        margin: 0 0 0 20px;
+    }
+
+}
+
+
+
+
+/* Main Section CSS-------------------------------------------------------------------------------------> */
+
+
+.main {
+    height: 50vh;
+    background-image: url("../images/home-5.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .project {
+    background-color: rgba(0, 0, 0, 0.538);
+    color: white;
+    width: 60%;
+    height: 15vh;
+    border: 2px solid sandybrown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .project h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    margin-top: 25px;
+
+}
+
+.project p {
+    font-size: 18px;
+    margin: 0px 0px 40px;
+}
+
+@media (min-width:768px) {
+
+    .main .project {
+        width: 50%;
+        height: 18vh;
+    }
+
+    .main .project h1 {
+        font-size: 45px;
+        margin-bottom: 5px;
+    }
+
+    .main p {
+        font-size: 35px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .main .project h1 {
+        font-size: 40px;
+
+    }
+
+    .main p {
+        font-size: 25px;
+    }
+
+    .main .project {
+        width: 32%;
+        height: 25vh;
+    }
+}
+
+@media (min-width:1280px) {
+
+    .main .project {
+        width: 33%;
+        height: 20vh;
+    }
+
+    .main .project h1 {
+        font-size: 50px;
+
+    }
+
+    .main p {
+        font-size: 28px;
+    }
+}
+
+
+
+
+/* .services section css -----------------------------------------------------------------------------------> */
+
+.services {
+    margin: 0px 0px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+p {
+
+    text-align: center;
+    margin: 0px 0px 40px;
+}
+
+
+.card {
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
+    padding: 25px 20px;
+    margin: 0px 0px 30px;
+    cursor: pointer;
+}
+
+.card p {
+    margin: 15px 0px;
+    text-align: start;
+}
+
+.card h3 {
+    font-size: 18px;
+}
+
+.card h5 {
+    font-size: 14px;
+}
+
+.fa-arrow-right {
+    color: #cda274;
+}
+
+.card:hover {
+
+    background-color: rgba(0, 0, 0, 0.149);
+    border: none;
+}
+
+.btn {
+    padding: 5px 10px;
+    color: blue;
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid blue;
+}
+
+.services-second-box {
+    display: none;
+}
+
+.btn:hover+.services-second-box {
+    display: inline-block;
+
+}
+
+
+
+
+@media (min-width:768px) {
+
+    .services h1 {
+        font-size: 32px;
+        margin: 2% 0;
+    }
+
+    .services p {
+
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .services-first-box,
+    .services-second-box {
+        width: 85%;
+        margin: 10px 0px 0px;
+    }
+
+    .card {
+        padding: 40px 30px;
+        margin-bottom: 6%;
+    }
+
+    .card h3 {
+        font-size: 26px;
+    }
+
+    .card p {
+        font-size: 24px;
+    }
+
+    .card h5 {
+        font-size: 22px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+@media (min-width:1024px) {
+
+    .services h1 {
+        margin: 20px 0px 10px;
+        margin-top: 4%;
+    }
+
+    .services p {
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 30px;
+        margin-bottom: 6%;
+        width: 70%;
+    }
+
+    .services-first-box,
+    .services-second-box {
+        width: 100%;
+        display: flex;
+        margin-bottom: 8%;
+        margin-top: 0px;
+    }
+
+    .card {
+        margin: 10px;
+        text-align: center;
+        padding: 30px 25px;
+        border: none;
+        border-radius: 10px;
+        margin: 0px 10px;
+        border: 1px solid lightgray;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        margin: 15px 0px;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .card h5 {
+        font-size: 14px;
+        margin: 30px 0px 10px;
+        font-family: "Playfair Display", serif;
+    }
+}
+
+
+
+@media (min-width:1280px) {
+
+    .services h1 {
+        margin-top: 4%;
+    }
+
+    .services p {
+        width: 50%;
+        font-size: 20px;
+        margin-bottom: 4%;
+    }
+
+    .services-first-box,
+    .services-second-box {
+        width: 90%;
+
+
+    }
+
+    .card {
+
+        margin: 0px 20px;
+
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card h5 {
+        font-size: 15px;
+    }
+
+    .card p {
+        width: 100%;
+        font-size: 17px;
+    }
+
+}
+
+
+
+
+/* Team Work Section--------------------------------------------------------------------------> */
+
+
+.Team-work {
+    text-align: center;
+    padding: 10% 20px;
+    margin: 5% 0px 15%;
+    background-color: antiquewhite;
+     /* background-color: rgb(247, 244, 244); */
+     /* background-color: rgb(247, 244, 244); */
+    /* background-color: rgb(246, 235, 222); */
+    /* background-color: rgb(250, 242, 234); */
+}
+
+.Team-work p {
+    padding-bottom: 5%;
+}
+
+
+.box-1 {
+    margin: 20px 0px 20%;
+
+}
+
+.img-block img {
+    width: 100%;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 60%;
+
+}
+
+.imgbox2 img {
+    border-radius: 0;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 65%;
+
+}
+
+.box-1 h1 {
+    font-size: 55px;
+    color: white;
+    font-family: "high-contrast", serif;
+}
+
+.info-block img {
+    width: 160px;
+    height: 160px;
+}
+
+.imgbox3 img {
+    width: 130px;
+    height: 130px;
+    margin: 20px 0px;
+}
+
+.info-block h2 {
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.img-block img {
+    height: 45vh;
+}
+
+
+@media (min-width:768px) {
+    .Team-work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Team-work h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .Team-work p {
+        font-size: 22px;
+        padding-bottom: 3%;
+    }
+
+
+    .box-1 {
+        display: flex;
+        align-items: center;
+        gap: 6%;
+        width: 95%;
+        margin-bottom: 15%;
+    }
+
+
+    .img-block,
+    .info-block {
+        width: 50%;
+    }
+
+    .img-block img {
+        height: 35vh;
+    }
+
+
+    .info-small-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .info-small-img img {
+        order: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    .info-small-img h1 {
+        order: 1;
+        font-size: 85px;
+        margin-bottom: 0px;
+    }
+
+    .info-block h2 {
+        font-size: 30px;
+        text-align: start;
+        font-family: "montserrat Light";
+    }
+
+    .info-block p {
+        text-align: start;
+        font-size: 19px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .imgbox2 {
+        order: 1;
+    }
+
+    .imgbox3 {
+        order: 0;
+    }
+
+
+    .imgbox3 img {
+        width: 80px;
+        height: 80px;
+        margin: 10px 0px;
+    }
+
+    .imgbox2 img {
+        border-radius: 0px;
+        width: 100%;
+        border-top-right-radius: 25%;
+        border-bottom-left-radius: 60%;
+    }
+}
+
+
+@media (min-width:1024px) {
+
+    .Team-work {
+        padding-bottom: 0px;
+        margin-bottom: 8%;
+    }
+
+    .Team-work h1 {
+        font-size: 30px;
+    }
+
+    .Team-work p {
+        font-size: 17px;
+        width: 80%;
+    }
+
+    .box-1 {
+        width: 85%;
+        margin-bottom: 10%;
+    }
+
+    .img-block img {
+        height: 55vh;
+    }
+
+    .info-small-img h1 {
+        font-size: 65px;
+    }
+
+    .info-block h2 {
+        font-size: 27px;
+    }
+
+    .info-block p {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width:1280px) {
+
+    .block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Team-work {
+        width: 77%;
+        padding: 8% 20px 4%;
+        margin-top: 10px;
+    }
+
+    .Team-work h1 {
+        font-size: 36px;
+
+    }
+
+    .Team-work p {
+        font-size: 18px;
+        padding-bottom: 3%;
+        width: 75%;
+    }
+
+    .box-1 {
+        width: 85%;
+    }
+
+    .info-small-img h1 {
+
+        font-size: 80px;
+    }
+
+    .info-block h2 {
+        font-size: 30px;
+    }
+
+    .info-block p {
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .img-block img {
+        height: 45vh;
+    }
+}
+
+
+/* Footer Section---------------------------------------------------------------------------------------> */
+
+
+footer {
+    background-color: #292f36;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.foter-logo i {
+    font-size: 20px;
+    margin: 20px 5px 10px;
+}
+
+
+.footer-services,
+.footer-contact {
+    margin: 15px 0px;
+}
+
+.footer-services h4,
+.footer-contact h4 {
+
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.footer-services li,
+.footer-contact li {
+
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.footer-left p {
+    text-align: start;
+    margin: 10px 0px;
+
+}
+
+
+@media (min-width:768px) {
+
+    footer {
+        height: 50vh;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        gap: 3%;
+    }
+
+    .footer-left {
+        width: 35%;
+        margin-top: 20px;
+    }
+
+    .footer-services h4,
+    .footer-contact h4 {
+
+        font-size: 20px;
+    }
+
+    .footer-services li,
+    .footer-contact li {
+        margin: 10px 0px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+}
+
+
+
+@media (min-width:1024px) {
+
+    footer {
+        height: 65vh;
+    }
+
+    .footer-left {
+        width: 40%;
+    }
+
+    .footer-left p {
+        margin: 10px 0px;
+    }
+}
+
+
+@media (min-width:1280px) {
+
+    footer {
+        height: 55vh;
+    }
+
+    .footer-info {
+        width: 75%;
+    }
+
+    .footer-left {
+        width: 35%;
+    }
+
+}

@@ -10,8 +10,6 @@
 
 }
 
-
-
 /* navigation css */
 
 .nav {
@@ -260,7 +258,6 @@ ul,
         font-size: 28px;
     }
 
-
 }
 
 /* quote thouth */
@@ -474,7 +471,7 @@ p {
     }
 
     .working-box {
-        width: 90%;
+        width: 100%;
         margin-bottom: 10%;
     }
 
@@ -537,14 +534,14 @@ p {
 
 
     .working-box {
-        width: 85%;
-        gap: 8%;
+        width: 90%;
+        gap: 10%;
         /* border: 2px solid black;/ */
     }
 
 
     .working-info h1 {
-        font-size: 30px;
+        font-size: 33px;
         margin: 20px 0px;
     }
 
@@ -552,6 +549,12 @@ p {
         font-size: 22px;
         
     }
+
+     .woking-img {
+        width: 50%;
+
+    }
+
 
 }
 
