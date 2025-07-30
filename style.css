@@ -6,22 +6,18 @@
 
 }
 
-.contenar {
-    padding: 10px 8%;
-
-}
-
 /* navigation css */
 
 .nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    position: sticky;
-    padding: 15px 0px;
+    position: fixed;
+    padding: 10px 15px;
     top: 0;
-    margin-bottom: 20px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
 .nav-logo {
@@ -30,7 +26,7 @@
 }
 
 .nav-logo i {
-    font-size: 22px;
+    font-size: 26px;
     margin-top: 4px;
     margin-right: 8px;
     color: #cda274;
@@ -40,7 +36,6 @@
     font-size: 21px;
     font-family: "Playfair Display", serif;
     font-weight: 500;
-
 }
 
 
@@ -50,28 +45,69 @@
     color: gray;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ul{
-    display: block;
-}
-
-.nav-btn {
+.nav-btn,
+ul {
     display: none;
 }
 
 
 @media(min-width:768px) {
 
+    .nav {
+        padding: 20px 6%;
+    }
+
+    .nav-logo i, .fa-bars {
+        font-size: 40px;
+        margin-right: 10px;
+
+    }
+
+    .nav-logo h1 {
+        font-size: 40px;
+    }
+
+    li {
+        margin: 0 0 0 12px;
+        font-size: 17px;
+
+    }
+
+    a {
+        color: black;
+        font-family: "Playfair Display", serif;
+        font-weight: 500;
+    }
+}
+
+
+@media (min-width:1024px) {
+
+    .nav{
+        padding: 15px 4%;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+
+      .nav-logo i {
+        font-size: 26px;
+      
+
+    }
+
     .nav-logo h1 {
         font-size: 26px;
     }
 
-    .contenar {
-        padding: 10px 6%;
 
+    .icon {
+        display: none;
     }
 
     .fa-bars {
@@ -86,34 +122,9 @@ ul{
         list-style: none;
     }
 
-
     li {
-        margin: 0 0 0 12px;
-        font-size: 17px;
-        
-    }
-
-    a{
-        color: black;
-         font-family: "Playfair Display", serif;
-        font-weight: 500;
-    }
-}
-
-
-@media (min-width:1024px) {
-
-    .nav-btn {
-        display: block;
-    }
-
-    .icon {
-        display: none;
-    }
-
-    li {
-
         margin: 0px 15px;
+        font-size: 18px;
     }
 
     .nav-btn button {
@@ -129,10 +140,13 @@ ul{
     button:hover {
         background-color: rgb(175, 141, 79);
     }
-
 }
 
 @media (min-width:1280px) {
+
+    .nav{
+        padding: 20px 4%;
+    }
     .icon {
         display: block;
     }
@@ -162,45 +176,51 @@ ul{
 /* main-section, hero section CSS */
 
 main {
-    height: 40vh;
+    height: 70vh;
     margin-top: 0;
-    background-image:  url("images/home-4.jpg");
-    background-color: linear-gradient(rgb(0, 0, 0, 0.42));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.37)), url("images/home-4.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    /* align-items: center; */
     padding: 25px;
     color: white;
     margin-bottom: 20px;
-    border-radius: 20px;
+   
+    /* border-radius: 10px; */
 }
 
 .main-content {
-    text-align: center;
+    /* text-align: center; */
+     /* border: 2px solid white; */
+     margin-bottom: 15%;
 }
 
 main h1 {
-    font-size: 22px;
-    font-family: "Playfair Display", serif;
-    font-weight: 500;
+    font-size: 26px;
+    /* line-height: 36px; */
+    /* font-family: "Playfair Display", serif; */
+    font-family: 'montserrat' ,sans-serif;
+    font-weight: 400;
     margin: 10px 0px;
 }
 
 p {
-    font-size: 14px;
-    margin: 10px 0px;
+    font-size: 18px;
+    margin: 20px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button {
 
-    padding: 8px 15px 10px;
+    padding: 10px 20px 14px;
     border: none;
     border-radius: 4px;
     background-color: #292f36;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .btn {
@@ -216,42 +236,62 @@ button {
 @media (min-width:768px) {
     main {
         height: 70vh;
+         align-items: center;
     }
 
     .main-content {
-        width: 80%;
+        width: 90%;
+         margin-bottom: 0px;
+         margin-top: 20%;
     }
 
     main h1 {
-        font-size: 45px;
+        font-size: 50px;
         font-family: "Playfair Display", serif;
+        font-family: 'montserrat', sans-serif;
         font-weight: 500;
         letter-spacing: 2px;
+        line-height: 60px;
     }
 
     .main-content p {
-        font-size: 20px;
-        margin: 10px 0px;
+        font-size: 30px;
+        line-height: 40px;
+        margin: 20px 0px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .btn {
-        font-size: 17px;
+        font-size: 26px;
+        padding: 20px 30px 24px;
+         margin: 30px 0px;
     }
+
+    .fa-arrow-right {
+   
+    font-size: 25px;
+   
+   
+}
 }
 
 @media (min-width:1024px) {
 
     main {
-        height: 85vh;
+        height: 100vh;
+        justify-content: flex-start;
     }
 
     .main-content {
-        width: 50%;
+        width: 70%;
+         margin-top: 10%;
+         margin-left: 40px;
+        /* border: 2px solid black; */
     }
 
     main h1 {
-        font-size: 60px;
+        font-size: 40px;
+        line-height: 50px;
 
     }
 
@@ -266,12 +306,25 @@ button {
     }
 }
 
+@media (min-width:1280px){
+
+     .main-content {
+        width: 40%;
+        
+        /* border: 2px solid black; */
+    }
+}
 
 
 
 /* Working-card CSS */
 
+.woking-box {
+    padding: 10px 5%;
+}
+
 .card {
+
     border: 1px solid #cda274;
     text-align: center;
     margin: 10px 0px;
@@ -526,7 +579,8 @@ footer {
 }
 
 
-.footer-services, .footer-contact {
+.footer-services,
+.footer-contact {
     margin: 15px 0px;
 }
 
@@ -540,15 +594,15 @@ footer {
 .footer-services li,
 .footer-contact li {
 
-     list-style: none;
+    list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     
+
 }
 
 
 @media (min-width:768px) {
 
-    footer{
+    footer {
         height: 50vh;
     }
 
@@ -576,7 +630,7 @@ footer {
         font-size: 16px;
         font-weight: 500;
     }
-    
+
 }
 
 
@@ -591,7 +645,7 @@ footer {
         margin: 10px 0px;
     }
 
-  
+
 
 }
 
@@ -604,5 +658,5 @@ footer {
     .footer-left {
         width: 35%;
     }
-    
+
 }
