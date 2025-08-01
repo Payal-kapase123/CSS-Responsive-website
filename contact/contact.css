@@ -1,25 +1,27 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contenar {
-    padding: 10px 20px;
+    padding: 0px 5%;
+
 }
 
 /* navigation css */
 
 .nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    position: sticky;
-    padding: 15px 0px;
+    position: fixed;
+    padding: 15px 15px;
     top: 0;
-    margin-bottom: 20px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
 .nav-logo {
@@ -28,7 +30,7 @@
 }
 
 .nav-logo i {
-    font-size: 22px;
+    font-size: 26px;
     margin-top: 4px;
     margin-right: 8px;
     color: #cda274;
@@ -38,7 +40,7 @@
     font-size: 21px;
     font-family: "Playfair Display", serif;
     font-weight: 500;
-
+    margin: 0px;
 }
 
 
@@ -52,41 +54,32 @@ a {
     text-decoration: none;
 }
 
-ul,
-.nav-btn {
+.nav-btn,
+ul {
     display: none;
 }
 
 
 @media(min-width:768px) {
 
+    .nav {
+        padding: 25px 6%;
+    }
+
+    .nav-logo i,
+    .fa-bars {
+        font-size: 40px;
+        margin-right: 10px;
+
+    }
 
     .nav-logo h1 {
-        font-size: 26px;
+        font-size: 40px;
     }
-
-    .contenar {
-        padding: 10px 6%;
-
-    }
-
-    .fa-bars {
-        display: none;
-    }
-
-
-    ul {
-        display: block;
-        display: flex;
-        align-items: center;
-        list-style: none;
-    }
-
 
     li {
         margin: 0 0 0 12px;
         font-size: 17px;
-
 
     }
 
@@ -100,17 +93,45 @@ ul,
 
 @media (min-width:1024px) {
 
+    .nav {
+        padding: 18px 4%;
+    }
+
     .nav-btn {
         display: block;
     }
 
-    .icon {
+    .nav-logo i {
+        font-size: 26px;
+
+
+    }
+
+    .nav-logo h1 {
+        font-size: 26px;
+    }
+
+
+    .icon,
+    .fa-bars {
         display: none;
     }
 
-    li {
+    .two {
+        display: none;
+    }
 
+
+    ul {
+        display: block;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    li {
         margin: 0px 15px;
+        font-size: 18px;
     }
 
     .nav-btn button {
@@ -126,11 +147,15 @@ ul,
     button:hover {
         background-color: rgb(175, 141, 79);
     }
-
 }
 
-
 @media (min-width:1280px) {
+
+    .nav {
+        padding: 20px 4%;
+
+    }
+
     .icon {
         display: block;
     }
@@ -153,13 +178,13 @@ ul,
     .nav-btn button {
         margin: 0 0 0 20px;
     }
+
 }
 
 
-
-
 .main {
-    height: 50vh;
+    height: 65vh;
+    /* margin-top: 6%; */
     background-image: url("../images/stude-3.avif");
     background-size: cover;
     display: flex;
@@ -167,11 +192,22 @@ ul,
     align-items: center;
 }
 
+.main-div {
+    /* border: 2px solid black; */
+    height: 30vh;
+    width: 80%;
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main .project {
-    background-color: rgba(0, 0, 0, 0.336);
+    background-color: rgba(0, 0, 0, 0.538);
     color: white;
-    width: 60%;
-    height: 15vh;
+    width: 80%;
+    height: 18vh;
+    border-radius: 15px;
     border: 2px solid white;
     display: flex;
     flex-direction: column;
@@ -181,25 +217,84 @@ ul,
 
 .main .project h1 {
     font-family: "Playfair Display", serif;
+    font-size: 28px;
+
 }
 
+.project p {
+    font-size: 18px;
+}
 
 @media (min-width:768px) {
 
+    .main {
+        height: 70vh;
+    }
+
+    .main-div {
+        padding-top: 9%;
+    }
+
     .main .project {
-        width: 35%;
-        height: 18vh;
+        width: 70%;
+        height: 22vh;
+
     }
 
     .main .project h1 {
-        font-size: 38px;
+        font-size: 45px;
         margin-bottom: 5px;
     }
 
     .main p {
-        font-size: 20px;
+        font-size: 33px;
     }
 }
+
+@media (min-width:1024px) {
+
+    .main-div {
+        padding-top: 7%;
+    }
+
+    .main .project h1 {
+        font-size: 36px;
+
+    }
+
+    .main p {
+        font-size: 22px;
+        margin: 5px 0px;
+    }
+
+    .main .project {
+        width: 45%;
+        height: 25vh;
+    }
+}
+
+@media (min-width:1280px) {
+
+    .main-div {
+        padding-top: 4%;
+    }
+
+    .main .project {
+        width: 35%;
+        height: 22vh;
+    }
+
+    .main .project h1 {
+        font-size: 50px;
+
+    }
+
+    .main p {
+        font-size: 23px;
+    }
+
+}
+
 
 
 
@@ -233,7 +328,7 @@ textarea {
     padding: 5px 0px;
     border: none;
     outline: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid gray;
     font-size: 16px;
     color: black;
 }
@@ -246,7 +341,7 @@ textarea {
 
 button {
     align-self: center;
-    padding: 10px 15px 15px;
+    padding: 10px 15px 13px;
     border-radius: 15px;
     background-color: black;
     font-size: 16px;
@@ -268,7 +363,7 @@ button i {
     border-radius: 8px;
     padding: 5%;
     padding-left: 35px;
-   margin-top: 8%;
+    margin-top: 8%;
     /* width: 85%; */
 }
 
@@ -327,7 +422,7 @@ button i {
 
     input,
     textarea {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .social-box {
@@ -378,7 +473,7 @@ button i {
         justify-content: center;
     }
 
-    .social-media-services{
+    .social-media-services {
         margin-top: 1%;
     }
 
@@ -407,6 +502,11 @@ button i {
 
     button {
         font-size: 18px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
     }
 
     button i {
@@ -472,7 +572,7 @@ button i {
 
 
 .black-box {
-     /* background-color: #292f36; */
+    /* background-color: #292f36; */
     padding: 10% 30px;
     margin: 5% 0px;
     text-align: center;
@@ -495,14 +595,11 @@ button i {
     background-color: #cda274;
     border: none;
     font-size: 18px;
-
     font-weight: 600;
 }
 
 .black-box .fa-arrow-right {
     color: rgb(54, 54, 54);
-
-
 }
 
 
@@ -541,7 +638,7 @@ button i {
 
 @media (min-width:1024px) {
 
-     .join-us {
+    .join-us {
         height: 60vh;
         border-radius: 15px;
     }
@@ -568,15 +665,16 @@ button i {
         border-radius: 15px;
         background-color: white;
     }
+
     .black-box {
-         background-color: #292f36;
+        background-color: #292f36;
         width: 70%;
         padding: 5% 0px;
         border-radius: 40px;
     }
 
-     .black-box h1 {
-       
+    .black-box h1 {
+
         font-size: 46px;
     }
 
@@ -592,11 +690,11 @@ button i {
 
 
 .about-us-inner {
-    /* border: 2px solid black; */
+
     border-radius: 18px;
-    background-color: #fafaf4;
+    background-color: #f4f0ec;
     padding: 2% 10px;
-    margin: 20% 0px 10%;
+    margin: 20% 0px 20%;
 
 }
 
@@ -612,6 +710,7 @@ button i {
     padding: 15% 25px;
     padding-right: 8px;
     margin: 30px 0px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
 .top {
@@ -630,10 +729,11 @@ button i {
 @media (min-width:768px) {
 
     .card-box,
-    .about-us-inner, .About-us-outer {
+    .about-us-inner,
+    .About-us-outer {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
     .card {
@@ -646,6 +746,7 @@ button i {
     .about-us-inner {
         padding: 5% 10px 7%;
         margin-top: 5%;
+        margin-bottom: 10%;
     }
 
     .about-us-inner h1 {
@@ -673,20 +774,21 @@ button i {
 }
 
 
-@media (min-width:1024px){
-     .about-us-inner {  
+@media (min-width:1024px) {
+    .about-us-inner {
         margin-top: 1%;
+        margin-bottom: 10%;
     }
 
-    .about-us-inner h1 {     
+    .about-us-inner h1 {
         width: 40%;
     }
 
-    .card-box{
+    .card-box {
         flex-direction: row;
     }
 
-    .card{
+    .card {
         padding: 6% 20px 8%;
     }
 
@@ -708,23 +810,28 @@ button i {
     }
 }
 
-@media (min-width:1280px){
+@media (min-width:1280px) {
 
-     .about-us-inner {  
+    .about-us-inner {
         margin-top: 7%;
         width: 80%;
         padding: 3% 3% 5%;
     }
 
-     .img-info p {
-        font-size: 16px;
+    .about-us-inner h1 {
+
+        width: 35%;
     }
 
-    .card{
+    .img-info p {
+        font-size: 16px;
+
+    }
+
+    .card {
         padding: 6% 4%;
     }
 }
-
 
 
 
@@ -769,6 +876,7 @@ footer {
 
     footer {
         height: 50vh;
+        padding: 10px;
     }
 
     .footer-info {
@@ -780,19 +888,25 @@ footer {
 
     .footer-left {
         width: 35%;
-        margin-top: 20px;
+        margin-top: 0px;
+        margin-right: 20px;
+    }
+
+    .footer-left p {
+        font-size: 20px;
+
     }
 
     .footer-services h4,
     .footer-contact h4 {
 
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .footer-services li,
     .footer-contact li {
         margin: 10px 0px;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 500;
     }
 
@@ -802,19 +916,27 @@ footer {
 
 @media (min-width:1024px) {
 
+    footer {
+        height: 70vh;
+        padding: 10px 30px;
+    }
+
     .footer-left {
         width: 40%;
+        margin-top: 3%;
     }
 
     .footer-left p {
         margin: 10px 0px;
     }
-
-
-
 }
 
+
 @media (min-width:1280px) {
+
+    footer {
+        height: 60vh;
+    }
 
     .footer-info {
         width: 75%;

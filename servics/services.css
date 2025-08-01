@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -5,22 +6,23 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 .contenar {
     padding: 0px 5%;
+
 }
 
-/* Navigation css------------------------------------------------------------------> */
+/* navigation css */
 
 .nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    position: sticky;
-    padding: 15px 0px;
+    position: fixed;
+    padding: 15px 15px;
     top: 0;
-    margin: 10px 0px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
 .nav-logo {
@@ -29,7 +31,7 @@
 }
 
 .nav-logo i {
-    font-size: 22px;
+    font-size: 26px;
     margin-top: 4px;
     margin-right: 8px;
     color: #cda274;
@@ -48,71 +50,76 @@
     color: gray;
 }
 
-
 a {
     text-decoration: none;
 }
 
-
-ul,
-.nav-btn {
+.nav-btn,
+ul {
     display: none;
 }
 
 
 @media(min-width:768px) {
 
-    .nav-logo i {
-        font-size: 35px;
-        margin-right: 15px;
+    .nav {
+        padding: 25px 6%;
+    }
+
+    .nav-logo i,
+    .fa-bars {
+        font-size: 40px;
+        margin-right: 10px;
+
     }
 
     .nav-logo h1 {
         font-size: 40px;
     }
 
-    /* .contenar {
-        padding: 10px 8%;
-        
-    } */
-    .contenar {
-        padding: 0px 5%;
+    li {
+        margin: 0 0 0 12px;
+        font-size: 17px;
+
     }
 
-
-    .fa-bars {
-        font-size: 40px;
-
+    a {
+        color: black;
+        font-family: "Playfair Display", serif;
+        font-weight: 500;
     }
 }
 
 
 @media (min-width:1024px) {
 
-    .contenar {
-        padding: 10px 8%;
-
+    .nav {
+        padding: 18px 4%;
     }
 
-    .nav {
-        margin: 0px;
-        margin-bottom: 5px;
+    .nav-btn {
+        display: block;
     }
 
     .nav-logo i {
-        font-size: 25px;
-        margin-right: 5px;
+        font-size: 26px;
+
 
     }
 
     .nav-logo h1 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+
+    .icon {
+        display: none;
     }
 
     .fa-bars {
         display: none;
-
     }
+
 
     ul {
         display: block;
@@ -121,29 +128,13 @@ ul,
         list-style: none;
     }
 
-
     li {
-
-        font-size: 19px;
         margin: 0px 15px;
-    }
-
-    a {
-        color: black;
-        font-family: "Playfair Display", serif;
-        font-weight: 500;
-    }
-
-    .nav-btn {
-        display: block;
-    }
-
-    .icon {
-        display: none;
+        font-size: 18px;
     }
 
     .nav-btn button {
-        padding: 10px 10px 8px;
+        padding: 5px 10px 8px;
         font-size: 14px;
         border: none;
         background-color: rgb(229, 200, 146);
@@ -155,12 +146,15 @@ ul,
     button:hover {
         background-color: rgb(175, 141, 79);
     }
-
 }
 
-
-
 @media (min-width:1280px) {
+
+    .nav {
+        padding: 20px 4%;
+
+    }
+
     .icon {
         display: block;
     }
@@ -187,15 +181,21 @@ ul,
 }
 
 
-
-
-/* Main Section CSS-------------------------------------------------------------------------------------> */
-
-
 .main {
-    height: 50vh;
-    background-image: url("../images/home-5.jpg");
+    height: 65vh;
+    /* margin-top: 6%; */
+    background-image: url("../Living-room/main-8.jpg");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div {
+    /* border: 2px solid black; */
+    height: 30vh;
+    width: 80%;
+    padding-top: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,9 +204,10 @@ ul,
 .main .project {
     background-color: rgba(0, 0, 0, 0.538);
     color: white;
-    width: 60%;
-    height: 15vh;
-    border: 2px solid sandybrown;
+    width: 80%;
+    height: 18vh;
+    border-radius: 15px;
+    border: 2px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,21 +216,28 @@ ul,
 
 .main .project h1 {
     font-family: "Playfair Display", serif;
-    font-size: 26px;
-    margin-top: 25px;
-
+    font-size: 28px;
 }
 
 .project p {
     font-size: 18px;
-    margin: 0px 0px 40px;
+    margin-bottom: 20px;
 }
 
 @media (min-width:768px) {
 
+    .main {
+        height: 70vh;
+    }
+
+    .main-div {
+        padding-top: 9%;
+    }
+
     .main .project {
-        width: 50%;
-        height: 18vh;
+        width: 70%;
+        height: 22vh;
+
     }
 
     .main .project h1 {
@@ -238,32 +246,41 @@ ul,
     }
 
     .main p {
-        font-size: 35px;
+        font-size: 33px;
     }
 }
 
 @media (min-width:1024px) {
 
+    .main-div {
+        padding-top: 7%;
+    }
+
     .main .project h1 {
-        font-size: 40px;
+        font-size: 36px;
 
     }
 
     .main p {
-        font-size: 25px;
+        font-size: 22px;
+        margin: 5px 0px 15px;
     }
 
     .main .project {
-        width: 32%;
+        width: 45%;
         height: 25vh;
     }
 }
 
 @media (min-width:1280px) {
 
+    .main-div {
+        padding-top: 4%;
+    }
+
     .main .project {
-        width: 33%;
-        height: 20vh;
+        width: 35%;
+        height: 22vh;
     }
 
     .main .project h1 {
@@ -272,8 +289,9 @@ ul,
     }
 
     .main p {
-        font-size: 28px;
+        font-size: 23px;
     }
+
 }
 
 
@@ -295,10 +313,11 @@ h1 {
     margin: 5px 0px;
 }
 
-p {
+.services p {
 
     text-align: center;
     margin: 0px 0px 40px;
+    font-size: 16px;
 }
 
 
@@ -313,6 +332,7 @@ p {
 .card p {
     margin: 15px 0px;
     text-align: start;
+    font-size: 15px;
 }
 
 .card h3 {
@@ -350,6 +370,9 @@ p {
 
 }
 
+.btn:hover{
+    display: none;
+}
 
 
 
@@ -429,6 +452,11 @@ p {
         border-radius: 10px;
         margin: 0px 10px;
         border: 1px solid lightgray;
+         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
     }
 
     .btn {
@@ -443,12 +471,12 @@ p {
         margin: 15px 0px;
         font-size: 16px;
         text-align: center;
-        width: 100%;
+        width: 90%;
     }
 
     .card h5 {
         font-size: 14px;
-        margin: 30px 0px 10px;
+        margin: 15px 0px 10px;
         font-family: "Playfair Display", serif;
     }
 }
@@ -514,6 +542,7 @@ p {
 
 .Team-work p {
     padding-bottom: 5%;
+    font-size: 16px;
 }
 
 
@@ -528,6 +557,8 @@ p {
     border-bottom-left-radius: 60%;
 
 }
+
+
 
 .imgbox2 img {
     border-radius: 0;
@@ -545,6 +576,10 @@ p {
 .info-block img {
     width: 160px;
     height: 160px;
+}
+
+.info-block p{
+    font-size: 15px;
 }
 
 .imgbox3 img {
@@ -659,6 +694,8 @@ p {
 
 @media (min-width:1024px) {
 
+   
+
     .Team-work {
         padding-bottom: 0px;
         margin-bottom: 8%;
@@ -670,7 +707,7 @@ p {
 
     .Team-work p {
         font-size: 17px;
-        width: 80%;
+        width: 90%;
     }
 
     .box-1 {
@@ -713,7 +750,6 @@ p {
 
     .Team-work h1 {
         font-size: 36px;
-
     }
 
     .Team-work p {
@@ -747,7 +783,6 @@ p {
 
 
 /* Footer Section---------------------------------------------------------------------------------------> */
-
 
 footer {
     background-color: #292f36;
@@ -785,17 +820,12 @@ footer {
 
 }
 
-.footer-left p {
-    text-align: start;
-    margin: 10px 0px;
-
-}
-
 
 @media (min-width:768px) {
 
     footer {
         height: 50vh;
+        padding: 10px ;
     }
 
     .footer-info {
@@ -807,19 +837,25 @@ footer {
 
     .footer-left {
         width: 35%;
-        margin-top: 20px;
+        margin-top: 0px;
+        margin-right: 20px;
+    }
+
+    .footer-left p{
+        font-size: 20px;
+       
     }
 
     .footer-services h4,
     .footer-contact h4 {
 
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .footer-services li,
     .footer-contact li {
         margin: 10px 0px;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 500;
     }
 
@@ -829,12 +865,14 @@ footer {
 
 @media (min-width:1024px) {
 
-    footer {
-        height: 65vh;
+    footer{
+        height: 70vh;
+        padding: 10px 30px;
     }
 
     .footer-left {
         width: 40%;
+        margin-top: 3%;
     }
 
     .footer-left p {
@@ -845,8 +883,8 @@ footer {
 
 @media (min-width:1280px) {
 
-    footer {
-        height: 55vh;
+    footer{
+        height: 60vh;
     }
 
     .footer-info {

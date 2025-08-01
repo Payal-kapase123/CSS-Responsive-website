@@ -1,8 +1,9 @@
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contenar {
@@ -13,14 +14,15 @@
 /* navigation css */
 
 .nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    position: sticky;
-    padding: 15px 0px;
+    position: fixed;
+    padding: 15px 15px;
     top: 0;
-    margin: 10px 0px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
 .nav-logo {
@@ -29,7 +31,7 @@
 }
 
 .nav-logo i {
-    font-size: 22px;
+    font-size: 26px;
     margin-top: 4px;
     margin-right: 8px;
     color: #cda274;
@@ -39,7 +41,6 @@
     font-size: 21px;
     font-family: "Playfair Display", serif;
     font-weight: 500;
-
 }
 
 
@@ -53,31 +54,39 @@ a {
     text-decoration: none;
 }
 
-ul,
-.nav-btn {
+.nav-btn,
+ul {
     display: none;
 }
 
 
 @media(min-width:768px) {
 
-    .nav-logo i {
-        font-size: 35px;
-        margin-right: 15px;
+    .nav {
+        padding: 25px 6%;
+    }
+
+    .nav-logo i,
+    .fa-bars {
+        font-size: 40px;
+        margin-right: 10px;
+
     }
 
     .nav-logo h1 {
         font-size: 40px;
     }
 
-    .contenar {
-        padding: 10px 8%;
-        
+    li {
+        margin: 0 0 0 12px;
+        font-size: 17px;
+
     }
 
-    .fa-bars {
-        font-size: 40px;
-
+    a {
+        color: black;
+        font-family: "Playfair Display", serif;
+        font-weight: 500;
     }
 }
 
@@ -85,24 +94,32 @@ ul,
 @media (min-width:1024px) {
 
     .nav {
-        margin: 0px;
-        margin-bottom: 5px;
+        padding: 18px 4%;
+    }
+
+    .nav-btn {
+        display: block;
     }
 
     .nav-logo i {
-        font-size: 25px;
-        margin-right: 5px;
+        font-size: 26px;
+
 
     }
 
     .nav-logo h1 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+
+    .icon {
+        display: none;
     }
 
     .fa-bars {
         display: none;
-
     }
+
 
     ul {
         display: block;
@@ -111,29 +128,13 @@ ul,
         list-style: none;
     }
 
-
     li {
-
-        font-size: 19px;
         margin: 0px 15px;
-    }
-
-    a {
-        color: black;
-        font-family: "Playfair Display", serif;
-        font-weight: 500;
-    }
-
-    .nav-btn {
-        display: block;
-    }
-
-    .icon {
-        display: none;
+        font-size: 18px;
     }
 
     .nav-btn button {
-        padding: 10px 10px 8px;
+        padding: 5px 10px 8px;
         font-size: 14px;
         border: none;
         background-color: rgb(229, 200, 146);
@@ -145,12 +146,15 @@ ul,
     button:hover {
         background-color: rgb(175, 141, 79);
     }
-
 }
 
-
-
 @media (min-width:1280px) {
+
+    .nav {
+        padding: 20px 4%;
+
+    }
+
     .icon {
         display: block;
     }
@@ -177,11 +181,21 @@ ul,
 }
 
 
-
 .main {
-    height: 50vh;
+    height: 65vh;
+    /* margin-top: 6%; */
     background-image: url("../images/kicchen-1.jpg");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div {
+    /* border: 2px solid black; */
+    height: 30vh;
+    width: 80%;
+    padding-top: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,9 +204,10 @@ ul,
 .main .project {
     background-color: rgba(0, 0, 0, 0.538);
     color: white;
-    width: 60%;
-    height: 15vh;
-    border: 2px solid sandybrown;
+    width: 80%;
+    height: 18vh;
+    border-radius: 15px;
+    border: 2px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,15 +219,24 @@ ul,
     font-size: 28px;
 }
 
-.project p{
-    font-size: 20px;
+.project p {
+    font-size: 18px;
 }
 
 @media (min-width:768px) {
 
+    .main {
+        height: 70vh;
+    }
+
+    .main-div {
+        padding-top: 9%;
+    }
+
     .main .project {
-        width: 50%;
-        height: 18vh;
+        width: 70%;
+        height: 22vh;
+
     }
 
     .main .project h1 {
@@ -221,54 +245,65 @@ ul,
     }
 
     .main p {
-        font-size: 35px;
+        font-size: 33px;
     }
 }
 
-@media (min-width:1024px){
+@media (min-width:1024px) {
 
-     .main .project h1 {
-        font-size: 40px;
-       
+    .main-div {
+        padding-top: 7%;
+    }
+
+    .main .project h1 {
+        font-size: 36px;
+
     }
 
     .main p {
-        font-size: 25px;
+        font-size: 22px;
+        margin: 5px 0px;
     }
 
-     .main .project {
-        width: 32%;
+    .main .project {
+        width: 45%;
         height: 25vh;
     }
 }
 
-@media (min-width:1280px){
+@media (min-width:1280px) {
 
-     .main .project {
-        width: 33%;
-        height: 20vh;
+    .main-div {
+        padding-top: 4%;
     }
-    
-     .main .project h1 {
+
+    .main .project {
+        width: 35%;
+        height: 22vh;
+    }
+
+    .main .project h1 {
         font-size: 50px;
-       
+
     }
 
     .main p {
-        font-size: 28px;
+        font-size: 23px;
     }
 
 }
 
+
 /* quote thouth */
 
 .about-first {
-
+    /* border: 2px solid black; */
     width: 100%;
     height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0px;
 }
 
 .bout-outer-box {
@@ -281,14 +316,14 @@ ul,
 }
 
 .quot-box {
-    height: 35vh;
+    height: 36vh;
     width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: white;
-
+    /* border: 2px solid black; */
 }
 
 .quot-box i {
@@ -306,17 +341,21 @@ ul,
 @media (min-width:768px) {
 
 
+    .about-first {
+        margin: 40px 0px;
+    }
+
     .bout-outer-box,
     .quot-box {
         width: 80%;
-        height: 30vh;
+        height: 32vh;
     }
 
     .quot-box h3 {
         font-size: 30px;
     }
 
-     .quot-box p {
+    .quot-box p {
         font-size: 22px;
     }
 
@@ -326,22 +365,22 @@ ul,
 @media (min-width:1024px) {
 
     .about-first {
-
-    width: 100%;
-    height: 70vh;
-    
-}
+        width: 100%;
+        height: 68vh;
+        margin: 0px 0px;
+    }
 
     .bout-outer-box,
     .quot-box {
         width: 55%;
         height: 35vh;
-       
+
     }
 
-     .quot-box h3 {
+    .quot-box h3 {
         font-size: 25px;
     }
+
     .quot-box {
         width: 80%;
     }
@@ -365,51 +404,58 @@ ul,
     .quot-box h3 {
         font-size: 30px;
     }
-
 }
 
 
 
 .working {
-
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid black; */
+
+
 }
 
 .working-box {
-     margin-bottom: 15%;
-     padding: 10px 10px 20px;
-     box-shadow: 0px 0px 10px rgb(0,0,0, 0.2);
+    margin-bottom: 15%;
+    padding-top: 3%;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.18);
 }
 
 .working-info {
     text-align: center;
+    margin: 20px 10px 30px;
+}
+
+.working-info h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
-.working-info h1,
 p {
+    font-size: 15px;
     margin: 10px 0px;
 }
 
 .working-info button {
-    margin: 10px 0px;
-    padding: 10px 15px 12px;
+    margin: 20px 0px;
+    padding: 8px 15px 13px;
     background-color: black;
     border: none;
     color: white;
-    border-radius: 14px;
-    font-size: 14px;
-   
+    font-size: 15px;
+
 }
 
 
- .working-info button .fa-arrow-right {
-     color: #cda274;
+.working-info button .fa-arrow-right {
+    color: #cda274;
     font-size: 18px;
     margin-left: 5px;
     margin-top: 3px;
@@ -417,18 +463,17 @@ p {
 
 .woking-img img {
     width: 100%;
-    height: 30vh;
-    border-radius: 4px;
-
+    height: 35vh;
+    border-radius: 24px;
+    padding: 20px 20px 0px;
 }
+
 
 @media (min-width:768px) {
 
-
     .working-box {
         width: 95%;
-        /* height: 80vh; */
-        padding: 40px 30px 40px;
+        padding: 40px 30px;
     }
 
     .working-info {
@@ -442,37 +487,46 @@ p {
     .working-info p {
         font-size: 29px;
         margin: 20px 0px;
+
+    }
+
+    .woking-img img {
+        padding: 20px 20px 0px;
     }
 
     .working-info button {
-   
-    font-size: 24px;
-   margin: 20px 0px;
-    padding: 15px 20px 18px;
-}
+        font-size: 24px;
+        margin: 20px 0px;
+        padding: 15px 20px 18px;
+    }
 
 
- .working-info button .fa-arrow-right {
-   
-    font-size: 28px;
-    
+    .working-info button .fa-arrow-right {
+        font-size: 28px;
+    }
 }
-}
+
+/* new */
 
 
 @media (min-width:1024px) {
 
+    .working,
     .working-box {
-        /* margin: 10% 0px 8%; */
+
         display: flex;
+        justify-content: center;
         align-items: center;
-        gap: 7%;
-        box-shadow: none;
+        border: none;
     }
 
     .working-box {
-        width: 100%;
+        width: 50%;
+        gap: 5%;
+        box-shadow: none;
+        width: 95%;
         margin-bottom: 10%;
+        padding: 20px 30px;
     }
 
     .working-info {
@@ -482,14 +536,19 @@ p {
 
     }
 
-
-     .working-info h1 {
-        font-size: 28px;
+    .working-info h1 {
+        font-size: 26px;
     }
 
     .working-info p {
-        font-size: 20px;
-        
+        font-size: 16px;
+
+    }
+
+    .woking-img img {
+        padding: 0px;
+        border-radius: 20px;
+        height: 45vh;
     }
 
     .woking-img {
@@ -497,31 +556,27 @@ p {
 
     }
 
-    .woking-img img {
-        border-radius: 50px;
-        height: 40vh;
-    }
-
     .working-info button {
         font-size: 16px;
-        padding: 10px 15px ;
+        padding: 10px 15px 12px;
         display: flex;
         align-items: center;
+        margin: 23px 0px;
+        border-radius: 15px;
     }
 
     .working-info button .fa-arrow-right {
-   
-    font-size: 23px;
-    margin-left: 10px;
-    
-}
+        font-size: 23px;
+        margin-left: 10px;
 
-    .box-1 {
-        order: 1;  
     }
 
-    .box-11{
-         margin-bottom: 10%;
+    .box-1 {
+        order: 1;
+    }
+
+    .box-11 {
+        margin-bottom: 10%;
     }
 
     .box-2 {
@@ -529,32 +584,34 @@ p {
     }
 }
 
+
 @media (min-width:1280px) {
 
-
-
     .working-box {
-        width: 90%;
-        gap: 10%;
-        /* border: 2px solid black;/ */
+        width: 80%;
+        gap: 5%;
     }
 
 
     .working-info h1 {
-        font-size: 33px;
+        font-size: 30px;
         margin: 20px 0px;
     }
 
     .working-info p {
-        font-size: 22px;
-        
-    }
-
-     .woking-img {
-        width: 50%;
+        font-size: 18px;
 
     }
 
+    .woking-img img {
+        height: 45vh;
+    }
+
+    .working-info button {
+        font-size: 18px;
+        padding: 14px 20px 18px;
+
+    }
 
 }
 
@@ -563,7 +620,6 @@ p {
 /* pople-thinks ---------------->*/
 
 .people-thiks {
-
     background-color: rgb(247, 244, 244);
     display: flex;
     flex-direction: column;
@@ -597,11 +653,11 @@ p {
     border-radius: 14px;
 }
 
+
 @media(min-width:768px) {
 
     .people-thiks {
         height: 60vh;
-
     }
 
     .people-info {
@@ -621,14 +677,13 @@ p {
         width: 350px;
         height: 350px;
     }
-
 }
+
 
 @media (min-width:1024px) {
 
     .people-thiks {
         height: 90vh;
-
     }
 
     .people-info h1 {
@@ -655,8 +710,8 @@ p {
         justify-content: center;
 
     }
-
 }
+
 
 @media (min-width:1280px) {
 
@@ -740,6 +795,7 @@ button .fa-arrow-right {
 }
 
 
+
 @media (min-width: 768px) {
 
     .contac {
@@ -750,7 +806,7 @@ button .fa-arrow-right {
 
     .contact-box {
         align-items: center;
-       
+
         width: 90%;
     }
 
@@ -808,6 +864,8 @@ button .fa-arrow-right {
     .contact-box button {
         font-size: 15px;
         padding: 10px 15px;
+         font-size: 17px;
+        padding: 13px 20px 15px;
     }
 
     button .fa-arrow-right {
@@ -822,4 +880,121 @@ button .fa-arrow-right {
         width: 50%;
         margin-bottom: 5%;
     }
+}
+
+
+
+
+
+footer {
+    background-color: #292f36;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.foter-logo i {
+    font-size: 20px;
+    margin: 20px 5px 10px;
+}
+
+
+.footer-services,
+.footer-contact {
+    margin: 15px 0px;
+}
+
+.footer-services h4,
+.footer-contact h4 {
+
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.footer-services li,
+.footer-contact li {
+
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+@media (min-width:768px) {
+
+    footer {
+        height: 50vh;
+        padding: 10px ;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        gap: 3%;
+    }
+
+    .footer-left {
+        width: 35%;
+        margin-top: 0px;
+        margin-right: 20px;
+    }
+
+    .footer-left p{
+        font-size: 20px;
+       
+    }
+
+    .footer-services h4,
+    .footer-contact h4 {
+
+        font-size: 26px;
+    }
+
+    .footer-services li,
+    .footer-contact li {
+        margin: 10px 0px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+}
+
+
+
+@media (min-width:1024px) {
+
+    footer{
+        height: 70vh;
+        padding: 10px 30px;
+    }
+
+    .footer-left {
+        width: 40%;
+        margin-top: 3%;
+    }
+
+    .footer-left p {
+        margin: 10px 0px;
+    }
+}
+
+
+@media (min-width:1280px) {
+
+    footer{
+        height: 60vh;
+    }
+
+    .footer-info {
+        width: 75%;
+    }
+
+    .footer-left {
+        width: 35%;
+    }
+
 }
