@@ -31,7 +31,6 @@
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .nav-logo i {
@@ -216,7 +215,7 @@ ul {
     }
 
     .nav-logo h1 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .nav-list li a {
@@ -300,7 +299,7 @@ ul {
     }
 
     .nav-btn i {
-        font-size: 18px;
+        font-size: 20px;
         margin: 0 12px;
     }
 
@@ -326,7 +325,7 @@ ul {
     /* border: 2px solid black; */
     height: 30vh;
     width: 80%;
-    padding-top: 8%;
+    padding-top: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -361,9 +360,7 @@ ul {
         height: 70vh;
     }
 
-    .main-div {
-        padding-top: 9%;
-    }
+    
 
     .main .project {
         width: 70%;
@@ -384,7 +381,7 @@ ul {
 @media (min-width:1024px) {
 
     .main-div {
-        padding-top: 7%;
+        padding-top: 8%;
     }
 
     .main .project h1 {
@@ -406,7 +403,7 @@ ul {
 @media (min-width:1280px) {
 
     .main-div {
-        padding-top: 4%;
+        padding-top: 7%;
     }
 
     .main .project {
@@ -1012,6 +1009,19 @@ footer {
 
     .footer-left p {
         margin: 10px 0px;
+    }
+
+    .footer-services h4,
+    .footer-contact h4 {
+
+        font-size: 22px;
+    }
+
+    .footer-services li,
+    .footer-contact li {
+       
+        font-size: 18px;
+        
     }
 }
 

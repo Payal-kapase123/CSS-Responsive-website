@@ -35,7 +35,6 @@
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .nav-logo i {
@@ -310,7 +309,7 @@ li{
     }
 
     .nav-btn i {
-        font-size: 18px;
+        font-size: 20px;
         margin: 0 12px;
     }
 
@@ -1074,6 +1073,18 @@ footer {
 
     .footer-left p {
         margin: 10px 0px;
+    }
+
+     .footer-services h4,
+    .footer-contact h4 {
+
+        font-size: 22px;
+    }
+
+    .footer-services li,
+    .footer-contact li {
+        
+        font-size: 18px;
     }
 }
 

@@ -35,7 +35,7 @@
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+   
 }
 
 .nav-logo i {
@@ -307,7 +307,7 @@ ul {
     }
 
     .nav-btn i {
-        font-size: 18px;
+        font-size: 20px;
         margin: 0 12px;
     }
 
@@ -323,7 +323,8 @@ ul {
 .main {
     height: 65vh;
     /* margin-top: 6%; */
-    background-image: url("../images/kicchen-1.jpg");
+    background-image: url("../Living-room/kichn-8.jpg");
+    background-image: url("../Living-room/img-1-9.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -544,7 +545,7 @@ ul {
  
 
     .bout-outer-box {
-        width: 45%;
+        width: 43%;
     }
 
     .quot-box h3 {
@@ -1125,6 +1126,19 @@ footer {
 
     .footer-left p {
         margin: 10px 0px;
+    }
+
+    .footer-services h4,
+    .footer-contact h4 {
+
+        font-size: 22px;
+    }
+
+    .footer-services li,
+    .footer-contact li {
+       
+        font-size: 18px;
+        
     }
 }
 
