@@ -6,28 +6,32 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.contenar {
-    padding: 0px 5%;
-
-}
-
 /* navigation css */
 
+.navbar {
+    position: relative;
+    z-index: 1000;
+}
+
 .nav {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     position: fixed;
+    width: 100%;
     padding: 15px 15px;
     top: 0;
+    left: 0;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    /* border-bottom: 1px solid #ddd; */
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .nav-logo i {
@@ -38,14 +42,13 @@
 }
 
 .nav-logo h1 {
-    font-size: 21px;
+    font-size: 23px;
     font-family: "Playfair Display", serif;
     font-weight: 500;
 }
 
-
 .fa-bars {
-    font-size: 22px;
+    font-size: 28px;
     margin-top: 4px;
     color: gray;
 }
@@ -60,17 +63,114 @@ ul {
 }
 
 
+/* FULLSCREEN NAV LIST */
+.nav-list {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+    padding-top: 2%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 0.9s ease-in-out, opacity 1s ease-in-out;
+    z-index: 1000;
+     /* box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15); */
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+
+.menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.menu-icon .open-icon,
+.menu-icon .close-icon {
+    display: none;
+}
+
+
+#menu-toggle:not(:checked)+.menu-icon .open-icon {
+    display: inline;
+}
+
+#menu-toggle:checked+.menu-icon .close-icon {
+    display: inline;
+}
+
+#menu-toggle:checked~.nav-list {
+
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+/* Nav links */
+.nav-list li {
+    margin: 10px 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+
+    transition: color 0.3s;
+    font-family: "Playfair Display", serif;
+}
+
+.nav-list li a:hover {
+    color: #dba871;
+}
+
+.btn2 {
+    padding: 5px 10px 8px;
+    background-color: #cda274;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    margin: 10px 30px;
+}
+
+.batton-1 a,
+.btn2 a {
+    font-size: 16px;
+    color: white;
+}
+
+
 @media(min-width:768px) {
 
     .nav {
         padding: 25px 6%;
     }
 
+    .nav-list {
+        height: 40vh;
+    }
+
+    .menu-icon {
+        font-size: 40px;
+    }
+
     .nav-logo i,
     .fa-bars {
         font-size: 40px;
         margin-right: 10px;
-
     }
 
     .nav-logo h1 {
@@ -78,15 +178,21 @@ ul {
     }
 
     li {
-        margin: 0 0 0 12px;
-        font-size: 17px;
-
+       margin: 15px;
     }
 
-    a {
+   .nav-list li a {
         color: black;
         font-family: "Playfair Display", serif;
         font-weight: 500;
+       font-size: 23px;
+    }
+
+    .btn2 {
+        padding: 5px 10px 12px;
+        background-color: #cda274;
+        margin: 10px 30px;
+        font-size: 20px;
     }
 }
 
@@ -97,40 +203,52 @@ ul {
         padding: 18px 4%;
     }
 
+    .nav-list{
+        padding-top: 0px;
+    }
+
     .nav-btn {
         display: block;
     }
 
     .nav-logo i {
         font-size: 26px;
-
-
     }
 
     .nav-logo h1 {
         font-size: 26px;
     }
 
+    .nav-list li a {
+        font-size: 18px;
+    }
+
+    #navlist {
+        display: flex;
+        gap: 5%;
+        width: 60%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        max-height: none;
+        pointer-events: auto;
+        position: static;
+        /* So it doesn’t cover full screen */
+        height: auto;
+        /* Reset height */
+    }
+
+    .btn2 {
+        display: none;
+    }
 
     .icon {
         display: none;
     }
 
-    .fa-bars {
+    .menu-icon {
         display: none;
-    }
-
-
-    ul {
-        display: block;
-        display: flex;
-        align-items: center;
-        list-style: none;
-    }
-
-    li {
-        margin: 0px 15px;
-        font-size: 18px;
     }
 
     .nav-btn button {
@@ -148,15 +266,23 @@ ul {
     }
 }
 
+
 @media (min-width:1280px) {
+
+    #navlist {
+        gap: 4%;
+    }
 
     .nav {
         padding: 20px 4%;
-
     }
 
     .icon {
         display: block;
+    }
+
+     .nav-logo h1 {
+        font-size: 28px;
     }
 
     .nav-btn {
@@ -164,8 +290,12 @@ ul {
         align-items: center;
     }
 
-    li {
+    .nav-list li a {
+        font-size: 20px;
+        color: black;
+    }
 
+    li {
         font-size: 19px;
     }
 
@@ -181,10 +311,11 @@ ul {
 }
 
 
+
 .main {
     height: 65vh;
     /* margin-top: 6%; */
-    background-image: url("../Living-room/main-8.jpg");
+    background-image: url("../Living-room/kicn-6.png");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -299,6 +430,10 @@ ul {
 
 /* .services section css -----------------------------------------------------------------------------------> */
 
+.contenar {
+    padding: 0px 5%;
+
+}
 .services {
     margin: 0px 0px;
     padding: 30px 0px;

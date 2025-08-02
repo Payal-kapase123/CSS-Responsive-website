@@ -9,8 +9,6 @@
 /* navigation css */
 .navbar {
     position: relative;
-    /* width: 100%; */
-    /* position: relative; */
     z-index: 1000;
 }
 
@@ -32,10 +30,8 @@
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
 }
-
-
 
 .nav-logo i {
     font-size: 26px;
@@ -48,16 +44,12 @@
     font-size: 23px;
     font-family: "Playfair Display", serif;
     font-weight: 500;
-
 }
-
 
 .fa-bars {
     font-size: 28px;
     margin-top: 4px;
     color: gray;
-    /* border: 2px solid black; */
-    /* padding: 5px; */
 }
 
 a {
@@ -78,17 +70,16 @@ ul {
     left: 0;
     width: 100%;
     height: 55vh;
+    padding-top: 4%;
     background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
-
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     pointer-events: none;
-
     transition: max-height 0.9s ease-in-out, opacity 1s ease-in-out;
     z-index: 1000;
 }
@@ -119,9 +110,6 @@ ul {
     display: inline;
 }
 
-
-
-
 #menu-toggle:checked~.nav-list {
 
     max-height: 500px;
@@ -132,14 +120,13 @@ ul {
 
 /* Nav links */
 .nav-list li {
-    margin: 15px 0;
+    margin: 12px 0;
 }
 
 .nav-list li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
     color: black;
-
     transition: color 0.3s;
     font-family: "Playfair Display", serif;
 }
@@ -149,14 +136,20 @@ ul {
 }
 
 .btn2 {
-    padding: 5px 10px;
+    padding: 5px 10px 12px;
     background-color: #cda274;
+    border: none;
+    border-radius: 6px;
     margin: 10px 30px;
 }
 
 
 
-
+.batton-1 a,
+.btn2 a {
+    font-size: 16px;
+    color: white;
+}
 
 
 @media(min-width:768px) {
@@ -171,14 +164,12 @@ ul {
 
     .menu-icon {
         font-size: 40px;
-
     }
 
     .nav-logo i,
     .fa-bars {
         font-size: 40px;
         margin-right: 10px;
-
     }
 
     .nav-logo h1 {
@@ -188,20 +179,19 @@ ul {
     li {
         margin: 0 0 0 12px;
         font-size: 20px;
-
     }
 
-    a {
+    .nav-list li a {
         color: black;
         font-family: "Playfair Display", serif;
         font-weight: 500;
-        font-size: 48px;
+        font-size: 23px;
     }
 
+
     .btn2 {
-        padding: 5px 10px 12px;
-        background-color: #cda274;
-        margin: 10px 30px;
+        font-size: 23px;
+
     }
 }
 
@@ -209,7 +199,11 @@ ul {
 @media (min-width:1024px) {
 
     .nav {
-        padding: 18px 4%;
+        padding: 20px 4%;
+    }
+
+    .nav-list{
+        padding-top: 0px;
     }
 
     .nav-btn {
@@ -224,6 +218,29 @@ ul {
         font-size: 26px;
     }
 
+    .nav-list li a {
+        font-size: 18px;
+    }
+
+    #navlist {
+        display: flex;
+        gap: 5%;
+        width: 60%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        max-height: none;
+        pointer-events: auto;
+        position: static;
+        /* So it doesn’t cover full screen */
+        height: auto;
+        /* Reset height */
+    }
+
+    .btn2 {
+        display: none;
+    }
 
     .icon {
         display: none;
@@ -233,17 +250,8 @@ ul {
         display: none;
     }
 
-
-    ul {
-        display: block;
-        /* display: flex;
-        align-items: center;
-        list-style: none; */
-    }
-
-    li {
-        margin: 0px 15px;
-        font-size: 18px;
+    .batton-1 a{
+        color: white;
     }
 
     .nav-btn button {
@@ -259,19 +267,25 @@ ul {
     button:hover {
         background-color: rgb(175, 141, 79);
     }
-
-
 }
+
 
 @media (min-width:1280px) {
 
-    .nav {
-        padding: 20px 4%;
+    #navlist {
+        gap: 4%;
+    }
 
+    .nav {
+        padding: 16px 4%;
     }
 
     .icon {
         display: block;
+    }
+
+    .nav-logo h1 {
+        font-size: 28px;
     }
 
     .nav-btn {
@@ -279,8 +293,12 @@ ul {
         align-items: center;
     }
 
-    li {
+    .nav-list li a {
+        font-size: 20px;
+        color: black;
+    }
 
+    li {
         font-size: 19px;
     }
 
@@ -302,7 +320,7 @@ ul {
 /* main-section, hero section CSS */
 
 main {
-    height: 70vh;
+    height: 80vh;
     margin-top: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("./imgaes-2/bed-3.jpg");
     background-size: cover;
@@ -312,11 +330,13 @@ main {
     padding: 25px;
     color: white;
     margin-bottom: 20px;
-
+     border: 2px solid rgb(67, 15, 15);
 }
 
 .main-content {
-    margin-bottom: 17%;
+   
+    margin-bottom: 25%;
+    /* border: 2px solid white; */
 }
 
 main h1 {
@@ -332,9 +352,9 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-button {
-
+.btn {
     padding: 10px 20px 14px;
+    margin: 5px 0px;
     border: none;
     border-radius: 4px;
     background-color: #292f36;
@@ -349,19 +369,18 @@ button {
     color: white;
 }
 
-.main-content button:hover {
-
+.main-content .btn:hover {
     background-color: rgb(239, 236, 236);
-
 }
 
-.btn {
-    margin: 5px 0px;
+.btn a:hover {
+    color: #292f36;
 }
+
 
 .fa-arrow-right {
     margin-left: 4px;
-    font-size: 15px;
+    font-size: 18px;
     color: #cda274;
 }
 
@@ -404,7 +423,7 @@ button {
     }
 
     .btn a {
-        font-size: 24px;
+        font-size: 32px;
     }
 }
 
@@ -413,14 +432,17 @@ button {
 @media (min-width:1024px) {
     main {
         height: 100vh;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
+          /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("./imgaes-2/bed-log-3\ -\ Copy.jpg"); */
+    background-size: cover;
     }
 
     .main-content {
         width: 80%;
         margin-top: 10%;
         margin-left: 40px;
+        text-align: center;
     }
 
     main h1 {
@@ -439,6 +461,10 @@ button {
         font-size: 20px;
         padding: 15px 20px 17px;
         margin: 20px 0px;
+    }
+
+     .btn a {
+        font-size: 24px;
     }
 }
 
@@ -680,7 +706,7 @@ h5 {
 
 @media (min-width:768px) {
     .Experiance {
-        background-color: #f8f7f6;
+        background-color: #f9f3ed;
         height: 30vh;
         display: flex;
         justify-content: center;
@@ -689,7 +715,6 @@ h5 {
     }
 
     .nubers {
-
         width: 90%;
         display: flex;
     }
@@ -710,6 +735,13 @@ h5 {
 
 
 @media (min-width:1280px) {
+
+    .Experiance {
+      
+        height: 50vh;
+       
+    }
+
     .nubers {
         width: 60%;
     }
@@ -717,8 +749,13 @@ h5 {
     .nubers-info h1 {
         font-size: 45px;
         margin-bottom: 20px;
-
     }
+
+    
+.nubers-info p {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+}
 
 }
 
@@ -819,6 +856,18 @@ footer {
     .footer-left p {
         margin: 10px 0px;
     }
+
+      .footer-services h4,
+    .footer-contact h4 {
+
+        font-size: 22px;
+    }
+
+    .footer-services li,
+    .footer-contact li {
+        font-size: 18px;
+      
+    }
 }
 
 
@@ -847,7 +896,7 @@ footer {
 
 .images-box {
     /* border:  2px solid black; */
-    margin: 10% 10px;
+    margin: 5% 10px 20%;
     padding: 5px;
     text-align: center;
     display: flex;
@@ -856,18 +905,20 @@ footer {
 }
 
 .images-box h1 {
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 22px;
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 26px;
+    font-family: "Playfair Display", serif;
+    width: 70%;
 }
 
 .images-box p {
-    margin: 10px 0px 25px;
+    margin: 5px 0px 25px;
     font-size: 15px;
 }
 
 
-.one {
+/* .one {
     background-image: url("./imgaes-2/bed-7.jpg");
     background-size: cover;
 
@@ -900,6 +951,57 @@ footer {
     background-image: url("./imgaes-2/bed-6.jpg");
     background-size: cover;
 
+} */
+
+
+
+.one {
+    /* background-image: url("./imgaes-2/bed-7.jpg"); */
+    background-image: url("./Living-room/new-1-1.jpg");
+    background-size: cover;
+
+
+}
+
+.two {
+    background-image: url("./Living-room/new-1-2.jpg");
+    background-image: url("./Living-room/new-1-9.jpg");
+    /* background-image: url("./Living-room/new-5.jpg"); */
+    background-size: cover;
+}
+
+.three {
+    background-image: url("./Living-room/new1--9\ -\ Copy.jpg");
+    background-size: cover;
+    width: 99%;
+    height: 29.5vh;
+    margin-top: 3px;
+
+    border-radius: 6px;
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.ten {
+  
+    background-image: url("./Living-room/new-2\ -\ Copy.jpg");
+
+    background-size: cover;
+   
+}
+
+.four {
+   
+     background-image: url("./Living-room/new-1-2.jpg");
+    background-size: cover;
+
+}
+
+.five {
+    background-image: url("./Living-room/new-1-4.jpg");
+    background-size: cover;
+
 }
 
 .one,
@@ -907,8 +1009,8 @@ footer {
 .four,
 .five {
     width: 50%;
-    margin: 3px;
-    border-radius: 8px;
+    margin: 1px;
+    border-radius: 6px;
     display: flex;
     align-items: flex-end;
 }
@@ -916,12 +1018,12 @@ footer {
 .one,
 .two,
 .four,
-.five h6{
+.five h6 {
     font-size: 24px;
     border: 1px solid white;
     background-color: #292f36bd;
     padding: 10px 15px;
-  
+
 }
 
 .top,
@@ -948,8 +1050,9 @@ footer {
     display: none;
 }
 
-@media (min-width:768px) {
 
+
+@media (min-width:768px) {
     .top .botam {
         height: 60vh;
     }
@@ -959,25 +1062,40 @@ footer {
     }
 
     .midal .three {
-        height: 40vh;
-        width: 99%;
+        height: 39.5vh;
+        margin: 6px 0px;
+        width: 100%;
     }
 
     .images-box h1 {
-
         font-size: 32px;
-
     }
 
     .imge-box {
-        width: 90%;
+        width: 95%;
     }
 
     .images-box p {
-
         font-size: 20px;
         width: 70%;
         margin-bottom: 4%;
+    }
+
+    .one,
+    .two,
+    .four,
+    .five {
+        width: 50%;
+        margin: 4px;
+        border-radius: 8px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .top,
+    .midal,
+    .botam {
+        height: 40vh;
     }
 }
 
@@ -996,8 +1114,21 @@ footer {
     }
 
     .three {
-        height: 57vh;
+        height: 50vh;
+        margin: 5px;
+        height: 58vh;
     }
+
+    .ten{
+    background-size: cover;
+    width: 100%;
+    height: 58vh;
+    margin: 5px;
+    border-radius: 6px;
+    display: flex;
+    align-items: flex-end;
+    }
+   
 
     .images-box p {
         width: 50%;
@@ -1010,7 +1141,7 @@ footer {
     .three,
     .four,
     .five {
-        margin: 4px;
+        margin: 5px;
     }
 
 
@@ -1018,8 +1149,14 @@ footer {
     .botam {
         /* border: 2px solid black; */
         width: 100%;
-        height: 58vh;
-        /* margin: 4px 0px; */
+        height: 59vh;
+        /* margin: 14px 0px; */
+    }
+
+     .top,
+    .midal,
+    .botam {
+        height: 60vh;
     }
 }
 
@@ -1028,15 +1165,17 @@ footer {
 
     .top,
     .botam {
-        /* border: 2px solid black; */
+        
         width: 100%;
         height: 70vh;
-        /* margin: 4px 0px; */
+      
     }
 
-    .three {
-        height: 69vh;
+    .three, .ten {
+        height: 68.5vh;
     }
+
+  
 }
 
 
@@ -1048,15 +1187,17 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 15% 0px;
+    margin: 5% 0px;
     padding-left: 15px;
 }
 
 .people-info h1 {
     text-align: center;
     margin: 10px 0px;
+    font-size: 26px;
     font-family: "Playfair Display", serif;
 }
+
 .people-info p {
     text-align: center;
     margin: 10px 0px 20px;
@@ -1067,7 +1208,7 @@ footer {
 .people-info {
     width: 95%;
     margin: 20px 0px;
-    padding: 20px 20px 30px;
+    padding: 20px 13px 30px;
 
 }
 
@@ -1088,7 +1229,7 @@ footer {
 
     .people-thiks {
         height: 60vh;
-        margin: 10% 0;
+        margin: 7% 0 10%;
     }
 
     .people-info {
@@ -1104,7 +1245,7 @@ footer {
         width: 60%;
     }
 
-    .people-info p{
+    .people-info p {
         font-size: 24px;
     }
 
@@ -1119,7 +1260,7 @@ footer {
 
     .people-thiks {
         height: 90vh;
-        margin: 8% 0px;
+        margin: 5% 0px 7%;
     }
 
     .people-info h1 {
@@ -1128,7 +1269,7 @@ footer {
         width: 40%;
     }
 
-    .people-info p{
+    .people-info p {
         font-size: 16px;
         width: 80%;
     }
@@ -1141,14 +1282,15 @@ footer {
     }
 
     .people-img img {
-        width: 205px;
+        width: 230px;
         height: 300px;
     }
 
     .people-img {
 
         display: flex;
-        justify-content: center;
+        /* padding: 0px 20px; */
+        /* justify-content: center; */
 
     }
 }
@@ -1162,8 +1304,8 @@ footer {
     }
 
     .people-img img {
-        width: 280px;
-        height: 300px;
+        width: 300px;
+        height: 350px;
     }
 
     .people-info h1 {
@@ -1172,10 +1314,9 @@ footer {
         width: 30%;
     }
 
-    .people-info p{
+    .people-info p {
         font-size: 18px;
         margin-bottom: 20px;
         width: 50%;
     }
 }
-
