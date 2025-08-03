@@ -3,9 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+
 }
-li{
+
+li {
     cursor: pointer;
 }
 
@@ -14,7 +15,7 @@ li{
 
 }
 
-/* navigation css */
+/* navigation css ------------------------------------------------------------------------------>*/
 .navbar {
     position: relative;
     z-index: 1000;
@@ -32,13 +33,12 @@ li{
     left: 0;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
     z-index: 1000;
-    /* border-bottom: 1px solid #ddd; */
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
-   
+
 }
 
 .nav-logo i {
@@ -69,8 +69,6 @@ ul {
     display: none;
 }
 
-
-/* FULLSCREEN NAV LIST */
 .nav-list {
 
     position: absolute;
@@ -90,7 +88,7 @@ ul {
     pointer-events: none;
     transition: max-height 0.9s ease-in-out, opacity 1s ease-in-out;
     z-index: 1000;
-      /* box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -127,7 +125,7 @@ ul {
 
 }
 
-/* Nav links */
+
 .nav-list li {
     margin: 10px 0;
 }
@@ -157,7 +155,7 @@ ul {
 
 .batton-1 a,
 .btn2 a {
-    font-size: 16px;
+    font-size: 14px;
     color: white;
 }
 
@@ -189,10 +187,10 @@ ul {
     }
 
     li {
-       margin: 16px 0px;
+        margin: 16px 0px;
     }
 
-   .nav-list li a {
+    .nav-list li a {
         color: black;
         font-family: "Playfair Display", serif;
         font-weight: 500;
@@ -204,6 +202,12 @@ ul {
         font-size: 20px;
         margin: 20px 0px;
     }
+
+    .batton-1 a,
+    .btn2 a {
+        font-size: 20px;
+
+    }
 }
 
 
@@ -213,7 +217,7 @@ ul {
         padding: 18px 4%;
     }
 
-    .nav-list{
+    .nav-list {
         padding-top: 0;
         box-shadow: none;
     }
@@ -245,9 +249,8 @@ ul {
         max-height: none;
         pointer-events: auto;
         position: static;
-        /* So it doesn’t cover full screen */
         height: auto;
-        /* Reset height */
+
     }
 
     .btn2 {
@@ -274,6 +277,12 @@ ul {
 
     button:hover {
         background-color: rgb(175, 141, 79);
+    }
+
+    .batton-1 a,
+    .btn2 a {
+        font-size: 14px;
+
     }
 }
 
@@ -319,17 +328,13 @@ ul {
         margin: 0 0 0 20px;
     }
 
-
 }
 
-
+/* main section-----------------------------------------------------------------------  */
 
 .main {
     height: 65vh;
-    /* margin-top: 6%; */
-    background-image: url("../images/home-3.jpg");
-    background-image: url("../Living-room/bed-lon-1.jpg");
-    background-image: url("../Living-room/new1--9\ -\ Copy.jpg");
+    background-image: url("../images/new1--9\ -\ Copy\ \(2\).jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -337,7 +342,6 @@ ul {
 }
 
 .main-div {
-    /* border: 2px solid black; */
     height: 30vh;
     width: 80%;
     padding-top: 8%;
@@ -362,7 +366,7 @@ ul {
 .main .project h1 {
     font-family: "Playfair Display", serif;
     font-size: 28px;
-  
+
 }
 
 .main p {
@@ -441,6 +445,7 @@ ul {
 }
 
 
+ /* contackt section---------------------------------------------------------------------------- */
 
 .work-project {
     margin: 8% 0px 5%;
@@ -451,7 +456,6 @@ ul {
 }
 
 .work-project h1 {
-    /* font-family:"Playfair Display", serif ; */
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     margin: 10px 0px;
@@ -490,13 +494,13 @@ ul {
 }
 
 
-
+/* option-------------------------------------------------------------------------------------------  */
 
 .option {
     margin: 20px 0px 15%;
 }
 
-a{
+a {
     color: black;
 }
 
@@ -571,7 +575,7 @@ li:hover {
 }
 
 
-
+/* project-section---------------------------------------------------------------------------- */
 
 
 .project-section {
@@ -585,7 +589,7 @@ li:hover {
 
 .project-info {
     margin: 20px 0px;
-  text-align: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -593,12 +597,12 @@ li:hover {
 
 .project-info p {
     font-size: 15px;
-    
+
 }
 
 .project-info h2 {
     font-family: "Playfair Display", serif;
-   width: 70%;
+    width: 70%;
     margin: 10px 0px;
     font-size: 24px;
 }
@@ -845,7 +849,7 @@ li:hover {
 
     }
 
-    .project-section{
+    .project-section {
         margin-bottom: 10%;
     }
 
@@ -859,8 +863,8 @@ li:hover {
     }
 
 
-    
-     .para {
+
+    .para {
         width: 100%;
     }
 
@@ -910,7 +914,7 @@ li:hover {
         position: absolute;
         bottom: -100px;
         left: 230px;
-       
+
     }
 
     .third-proje .first img {
@@ -934,7 +938,7 @@ li:hover {
 }
 
 
-
+/* footer section ----------------------------------------------------------------------------  */
 
 
 footer {
@@ -978,7 +982,7 @@ footer {
 
     footer {
         height: 50vh;
-        padding: 10px ;
+        padding: 10px;
     }
 
     .footer-info {
@@ -994,9 +998,9 @@ footer {
         margin-right: 20px;
     }
 
-    .footer-left p{
+    .footer-left p {
         font-size: 20px;
-       
+
     }
 
     .footer-services h4,
@@ -1018,7 +1022,7 @@ footer {
 
 @media (min-width:1024px) {
 
-    footer{
+    footer {
         height: 70vh;
         padding: 10px 30px;
     }
@@ -1040,16 +1044,16 @@ footer {
 
     .footer-services li,
     .footer-contact li {
-      
+
         font-size: 18px;
-        
+
     }
 }
 
 
 @media (min-width:1280px) {
 
-    footer{
+    footer {
         height: 60vh;
     }
 

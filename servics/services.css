@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -25,7 +24,6 @@
     left: 0;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
     z-index: 1000;
-    /* border-bottom: 1px solid #ddd; */
 }
 
 .nav-logo {
@@ -62,7 +60,6 @@ ul {
 }
 
 
-/* FULLSCREEN NAV LIST */
 .nav-list {
     position: absolute;
     top: 99%;
@@ -81,7 +78,8 @@ ul {
     pointer-events: none;
     transition: max-height 0.9s ease-in-out, opacity 1s ease-in-out;
     z-index: 1000;
-     /* box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -118,7 +116,7 @@ ul {
 
 }
 
-/* Nav links */
+
 .nav-list li {
     margin: 10px 0;
 }
@@ -147,7 +145,7 @@ ul {
 
 .batton-1 a,
 .btn2 a {
-    font-size: 16px;
+    font-size: 14px;
     color: white;
 }
 
@@ -177,14 +175,14 @@ ul {
     }
 
     li {
-       margin: 15px;
+        margin: 15px;
     }
 
-   .nav-list li a {
+    .nav-list li a {
         color: black;
         font-family: "Playfair Display", serif;
         font-weight: 500;
-       font-size: 23px;
+        font-size: 23px;
     }
 
     .btn2 {
@@ -192,6 +190,12 @@ ul {
         background-color: #cda274;
         margin: 10px 30px;
         font-size: 20px;
+    }
+
+    .batton-1 a,
+    .btn2 a {
+        font-size: 20px;
+        color: white;
     }
 }
 
@@ -202,8 +206,9 @@ ul {
         padding: 18px 4%;
     }
 
-    .nav-list{
+    .nav-list {
         padding-top: 0px;
+        box-shadow: none;
     }
 
     .nav-btn {
@@ -233,9 +238,8 @@ ul {
         max-height: none;
         pointer-events: auto;
         position: static;
-        /* So it doesn’t cover full screen */
         height: auto;
-        /* Reset height */
+      
     }
 
     .btn2 {
@@ -263,6 +267,12 @@ ul {
     button:hover {
         background-color: rgb(175, 141, 79);
     }
+
+    .batton-1 a,
+    .btn2 a {
+        font-size: 14px;
+
+    }
 }
 
 
@@ -280,7 +290,7 @@ ul {
         display: block;
     }
 
-     .nav-logo h1 {
+    .nav-logo h1 {
         font-size: 28px;
     }
 
@@ -311,11 +321,13 @@ ul {
 
 
 
+
+/* main section ------------------------------------------------------------------> */
+
+
 .main {
     height: 65vh;
-    /* margin-top: 6%; */
-    background-image: url("../Living-room/kicn-6.png");
-    background-image: url("../Living-room/new1--9\ -\ Copy\ -\ Copy.jpg");
+    background-image: url("../images/new1--9\ -\ Copy\ -\ Copy.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -323,7 +335,6 @@ ul {
 }
 
 .main-div {
-    /* border: 2px solid black; */
     height: 30vh;
     width: 80%;
     padding-top: 15%;
@@ -361,12 +372,9 @@ ul {
         height: 70vh;
     }
 
-    
-
     .main .project {
         width: 70%;
         height: 22vh;
-
     }
 
     .main .project h1 {
@@ -432,6 +440,7 @@ ul {
     padding: 0px 5%;
 
 }
+
 .services {
     margin: 0px 0px;
     padding: 30px 0px;
@@ -503,7 +512,7 @@ h1 {
 
 }
 
-.btn:hover{
+.btn:hover {
     display: none;
 }
 
@@ -585,11 +594,11 @@ h1 {
         border-radius: 10px;
         margin: 0px 10px;
         border: 1px solid lightgray;
-         display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      
+
     }
 
     .btn {
@@ -666,9 +675,9 @@ h1 {
     text-align: center;
     padding: 10% 20px;
     margin: 5% 0px 15%;
-   
-     background-color: rgb(247, 244, 244);
-   
+
+    background-color: rgb(247, 244, 244);
+
 }
 
 .Team-work p {
@@ -690,7 +699,6 @@ h1 {
 }
 
 
-
 .imgbox2 img {
     border-radius: 0;
     border-top-left-radius: 25%;
@@ -709,7 +717,7 @@ h1 {
     height: 160px;
 }
 
-.info-block p{
+.info-block p {
     font-size: 15px;
 }
 
@@ -825,7 +833,7 @@ h1 {
 
 @media (min-width:1024px) {
 
-   
+
 
     .Team-work {
         padding-bottom: 0px;
@@ -956,7 +964,7 @@ footer {
 
     footer {
         height: 50vh;
-        padding: 10px ;
+        padding: 10px;
     }
 
     .footer-info {
@@ -972,9 +980,9 @@ footer {
         margin-right: 20px;
     }
 
-    .footer-left p{
+    .footer-left p {
         font-size: 20px;
-       
+
     }
 
     .footer-services h4,
@@ -996,7 +1004,7 @@ footer {
 
 @media (min-width:1024px) {
 
-    footer{
+    footer {
         height: 70vh;
         padding: 10px 30px;
     }
@@ -1018,16 +1026,16 @@ footer {
 
     .footer-services li,
     .footer-contact li {
-       
+
         font-size: 18px;
-        
+
     }
 }
 
 
 @media (min-width:1280px) {
 
-    footer{
+    footer {
         height: 60vh;
     }
 
