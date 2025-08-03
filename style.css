@@ -199,7 +199,7 @@ ul {
 @media (min-width:1024px) {
 
     .nav {
-        padding: 20px 4%;
+        padding: 10px 4%;
     }
 
     .nav-list {
@@ -434,7 +434,7 @@ p {
         height: 100vh;
         justify-content: center;
         align-items: center;
-        /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("./imgaes-2/bed-log-3\ -\ Copy.jpg"); */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("./imgaes-2/bed-9.jpg");
         background-size: cover;
     }
 
@@ -706,7 +706,7 @@ h5 {
 
 @media (min-width:768px) {
     .Experiance {
-        background-color: #f9f3ed;
+        background-color: #f6f3f1;
         height: 30vh;
         display: flex;
         justify-content: center;

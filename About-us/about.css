@@ -323,8 +323,6 @@ ul {
 .main {
     height: 65vh;
     /* margin-top: 6%; */
-    background-image: url("../Living-room/kichn-8.jpg");
-    background-image: url("../Living-room/office-1\ -\ Copy.jpg");
     background-image: url("../Living-room/new-3\ -\ Copy.jpg");
     background-size: cover;
     display: flex;
@@ -768,7 +766,7 @@ p {
 /* pople-thinks ---------------->*/
 
 .people-thiks {
-    background-color: rgb(247, 244, 244);
+    background-color: rgb(250, 244, 249);
     display: flex;
     flex-direction: column;
     justify-content: center;
