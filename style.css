@@ -202,7 +202,7 @@ ul {
         padding: 20px 4%;
     }
 
-    .nav-list{
+    .nav-list {
         padding-top: 0px;
     }
 
@@ -250,7 +250,7 @@ ul {
         display: none;
     }
 
-    .batton-1 a{
+    .batton-1 a {
         color: white;
     }
 
@@ -330,11 +330,11 @@ main {
     padding: 25px;
     color: white;
     margin-bottom: 20px;
-     border: 2px solid rgb(67, 15, 15);
+    border: 2px solid rgb(67, 15, 15);
 }
 
 .main-content {
-   
+
     margin-bottom: 25%;
     /* border: 2px solid white; */
 }
@@ -434,8 +434,8 @@ p {
         height: 100vh;
         justify-content: center;
         align-items: center;
-          /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("./imgaes-2/bed-log-3\ -\ Copy.jpg"); */
-    background-size: cover;
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("./imgaes-2/bed-log-3\ -\ Copy.jpg"); */
+        background-size: cover;
     }
 
     .main-content {
@@ -463,7 +463,7 @@ p {
         margin: 20px 0px;
     }
 
-     .btn a {
+    .btn a {
         font-size: 24px;
     }
 }
@@ -671,7 +671,7 @@ h5 {
 
 .Experiance {
     background-color: #f8f7f6;
-    margin-bottom: 15%;
+    margin: 15% 0px 20%;
 }
 
 .nubers {
@@ -712,6 +712,8 @@ h5 {
         justify-content: center;
         align-items: center;
         margin: 10% 0px;
+        margin: 13% 0px 15%;
+
     }
 
     .nubers {
@@ -733,13 +735,21 @@ h5 {
     }
 }
 
+@media(min-width:1024px) {
+    .Experiance {
+
+        height: 50vh;
+        margin: 12% 0px 13%;
+    }
+}
 
 @media (min-width:1280px) {
 
     .Experiance {
-      
-        height: 50vh;
-       
+
+        height: 45vh;
+        margin: 10% 0px 11%;
+
     }
 
     .nubers {
@@ -751,11 +761,11 @@ h5 {
         margin-bottom: 20px;
     }
 
-    
-.nubers-info p {
-    font-family: "Playfair Display", serif;
-    font-size: 18px;
-}
+
+    .nubers-info p {
+        font-family: "Playfair Display", serif;
+        font-size: 18px;
+    }
 
 }
 
@@ -774,7 +784,7 @@ footer {
 
 .foter-logo i {
     font-size: 20px;
-    margin: 20px 5px 10px;
+    margin: 5px 5px 10px;
 }
 
 
@@ -811,6 +821,12 @@ footer {
         justify-content: space-between;
         width: 90%;
         gap: 3%;
+    }
+
+
+    .foter-logo i {
+        font-size: 20px;
+        margin: 10px 5px 10px;
     }
 
     .footer-left {
@@ -857,7 +873,7 @@ footer {
         margin: 10px 0px;
     }
 
-      .footer-services h4,
+    .footer-services h4,
     .footer-contact h4 {
 
         font-size: 22px;
@@ -866,7 +882,7 @@ footer {
     .footer-services li,
     .footer-contact li {
         font-size: 18px;
-      
+
     }
 }
 
@@ -896,7 +912,7 @@ footer {
 
 .images-box {
     /* border:  2px solid black; */
-    margin: 5% 10px 20%;
+    margin: 5% 10px 15%;
     padding: 5px;
     text-align: center;
     display: flex;
@@ -984,16 +1000,16 @@ footer {
 }
 
 .ten {
-  
+
     background-image: url("./Living-room/new-2\ -\ Copy.jpg");
 
     background-size: cover;
-   
+
 }
 
 .four {
-   
-     background-image: url("./Living-room/new-1-2.jpg");
+
+    background-image: url("./Living-room/new-1-2.jpg");
     background-size: cover;
 
 }
@@ -1053,6 +1069,12 @@ footer {
 
 
 @media (min-width:768px) {
+
+    .images-box {
+        margin: 5% 10px 10%;
+        ;
+    }
+
     .top .botam {
         height: 60vh;
     }
@@ -1119,16 +1141,16 @@ footer {
         height: 58vh;
     }
 
-    .ten{
-    background-size: cover;
-    width: 100%;
-    height: 58vh;
-    margin: 5px;
-    border-radius: 6px;
-    display: flex;
-    align-items: flex-end;
+    .ten {
+        background-size: cover;
+        width: 100%;
+        height: 58vh;
+        margin: 5px;
+        border-radius: 6px;
+        display: flex;
+        align-items: flex-end;
     }
-   
+
 
     .images-box p {
         width: 50%;
@@ -1153,7 +1175,7 @@ footer {
         /* margin: 14px 0px; */
     }
 
-     .top,
+    .top,
     .midal,
     .botam {
         height: 60vh;
@@ -1165,17 +1187,18 @@ footer {
 
     .top,
     .botam {
-        
+
         width: 100%;
         height: 70vh;
-      
+
     }
 
-    .three, .ten {
+    .three,
+    .ten {
         height: 68.5vh;
     }
 
-  
+
 }
 
 
