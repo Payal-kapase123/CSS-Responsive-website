@@ -504,6 +504,8 @@ button i {
 
 
     background-color: #f4f0ec;
+      background-color: #f7e3dd;
+      background-color: #fae7e1;
     border-radius: 8px;
     padding: 5%;
     padding-left: 35px;
@@ -520,6 +522,7 @@ button i {
 
 .social-media i {
     background-color: white;
+    
     color: #cda274;
     display: flex;
     align-items: center;
@@ -841,6 +844,8 @@ button i {
 
     border-radius: 18px;
     background-color: #f4f0ec;
+      background-color: #f7e3dd;
+        background-color: #fae7e1;
     padding: 2% 10px;
     margin: 20% 0px 20%;
 

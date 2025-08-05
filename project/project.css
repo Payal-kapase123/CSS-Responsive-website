@@ -448,7 +448,7 @@ ul {
  /* contackt section---------------------------------------------------------------------------- */
 
 .work-project {
-    margin: 8% 0px 5%;
+    margin: 15% 0px 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -468,6 +468,11 @@ ul {
 
 
 @media(min-width:768px) {
+
+    .work-project {
+    margin: 8% 0px 5%;
+    
+}
     .work-project p {
         font-size: 24px;
         width: 95%;
@@ -497,7 +502,7 @@ ul {
 /* option-------------------------------------------------------------------------------------------  */
 
 .option {
-    margin: 20px 0px 15%;
+    margin: 20px 0px 20%;
 }
 
 a {
