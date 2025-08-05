@@ -572,8 +572,6 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .working-box {
@@ -778,7 +776,7 @@ p {
 /* pople-thinks -------------------------------------------------------------------->*/
 
 .people-thiks {
-    background-color: rgb(250, 244, 249);
+     background-color: #f7e3dd;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -907,8 +907,6 @@ p {
 /* Experiance of nuber ---------------------------------------------------------------------->*/
 
 .Experiance {
-    background-color: hsl(30, 59%, 71%);
-    background-color: #fae4db;
     background-color: #fff1ec;
     /* color: white; */
     margin: 15% 0px 20%;
@@ -947,7 +945,6 @@ p {
 
 @media (min-width:768px) {
     .Experiance {
-        /* background-color: #f6f3f1; */
         height: 30vh;
         display: flex;
         justify-content: center;
