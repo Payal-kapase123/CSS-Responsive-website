@@ -664,7 +664,7 @@ p {
     margin: 5px 0px;
     font-size: 26px;
     font-family: "Playfair Display", serif;
-    width: 70%;
+    width: 85%;
 }
 
 .images-box p {
@@ -907,7 +907,10 @@ p {
 /* Experiance of nuber ---------------------------------------------------------------------->*/
 
 .Experiance {
-    background-color: #f8f7f6;
+    background-color: hsl(30, 59%, 71%);
+    background-color: #fae4db;
+    background-color: #fff1ec;
+    /* color: white; */
     margin: 15% 0px 20%;
 }
 
@@ -926,6 +929,7 @@ p {
 
 .nubers-info h1 {
     color: #e6b988;
+    /* color: white; */
     font-size: 28px;
     font-family: " serif";
     font-weight: 700;
@@ -943,7 +947,7 @@ p {
 
 @media (min-width:768px) {
     .Experiance {
-        background-color: #f6f3f1;
+        /* background-color: #f6f3f1; */
         height: 30vh;
         display: flex;
         justify-content: center;
